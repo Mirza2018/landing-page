@@ -19,7 +19,7 @@ const Features = () => {
               l</p>
                <p  className='text-3xl bg-gradient-to-r from-white   to-black bg-clip-text text-transparent '>
                businesses access to key capital.</p> */}
-               <button className='bg-blue-500  text-2xl hover:text-blue-500 duration-500  hover:bg-white font-semibold py-6 px-20 rounded-full flex mt-20 ms-3 gap-2 items-center '>
+               <button className='bg-blue-500 md:mt-20  md:text-2xl text-xl   hover:text-blue-500 duration-500  hover:bg-white font-semibold py-6 px-20 rounded-full flex mt-20 ms-3 gap-2 items-center '>
                 Apply Today
                 <FaArrowRight />
                 </button>

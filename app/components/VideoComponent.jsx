@@ -3,7 +3,7 @@ import React from "react";
 
 const VideoComponent = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-900">
+    <div className="flex items-center justify-center  bg-gray-900">
       <video
         className="w-full max-w-4xl rounded-lg shadow-lg"
         controls
