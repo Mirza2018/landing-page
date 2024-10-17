@@ -1,5 +1,11 @@
-function convertToSubcurrency(amount, factor = 100) {
-    return Math.round(amount * factor);
-  }
-  
-  export default convertToSubcurrency;
+import React from 'react';
+
+const ConvertToSubCurrency = () => {
+  return (
+    <div>
+      
+    </div>
+  );
+};
+
+export default ConvertToSubCurrency;

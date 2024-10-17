@@ -1,39 +1,27 @@
 "use client"
+import Image from 'next/image';
 import React from 'react';
-import CheckoutPage from './CheckoutPage';
-import ConvertToSubCurrency from './ConvertToSubCurrency';
-import { Elements } from '@stripe/react-stripe-js';
-import { loadStripe } from '@stripe/stripe-js';
-
-if(process.env.NEXT_PUBLIC_STRIPE__PUBLIC_KEY===undefined){
-    throw new Error("NEXT_PUBLIC_STRIPE_PUBLIC_KEY is not defined")
-}
-
-const stripePromise=loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY)
+import logo from '../../asset/chatgtp.png'
+import { CheckoutPage } from './CheckoutPage';
 
 const Payment = () => {
-    const amount=49.99;
-    return (
-<main className="max-w-6xl mx-auto p-10 text-white text-center border m-10 rounded-md bg-gradient-to-tr from-blue-500 to-purple-500">
-      <div className="mb-10">
-        <h1 className="text-4xl font-extrabold mb-2">Sonny</h1>
-        <h2 className="text-2xl">
-          has requested
-          <span className="font-bold"> ${amount}</span>
-        </h2>
-      </div>
-
-      <Elements
-        stripe={stripePromise}
-        options={{
-          mode: "payment",
-          amount: ConvertToSubCurrency(amount),
-          currency: "usd",
-        }}
-      >
-        <CheckoutPage amount={amount} />
-      </Elements>
-    </main>
+  return (
+    <div className='flex h-100% justify-center items-center'>
+      <Image alt='image' src={logo} width={200} height={200}/>
+      <button onClick={() => {
+  CheckoutPage({
+    lineItems: [
+      {
+        price: "price_1QAs90KDpt7KOvOWKlFCBBMB", // Correct price ID
+        quantity: 1
+      }
+    ]
+  })
+}} className='text-white bg-slate-500 rounded-full px-2 py-2 shadow-2xl'>
+  Buy Now
+</button>
+    </div>
   );
-}
+};
+
 export default Payment;

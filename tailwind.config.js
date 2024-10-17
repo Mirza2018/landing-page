@@ -14,7 +14,7 @@ module.exports = {
         },
       },
       animation: {
-        slide: 'slide 15s linear infinite',
+        slide: 'slide 30s linear infinite',
       },
       colors: {
         background: "var(--background)",
