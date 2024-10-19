@@ -13,9 +13,9 @@ const Features = () => {
 
             <div className=''>
             <h2  className='lg:text-2xl  md:text-xl tracking-widest text-blue-600 font-semibold pb-5 '>THE FUNDRAISER</h2>
-            <h1 className='lg:text-6xl md:text-5xl text-4xl font-semibold text-wrap md:w-[40vw]  mx-auto '>Our Aim Is To Be The Largest Investor In Innovative Startups Around The World.</h1>
+            <h1 className='lg:text-6xl md:text-5xl text-4xl font-semibold text-wrap md:w-[37vw]  mx-auto '>Our Aim Is To Be The Largest Investor In Innovative Startups Around The World.</h1>
           
-               <p className='md:text-3xl  pt-5 md:w-[40vw] w-[90vw]' >
+               <p className='md:text-3xl  pt-5 md:w-[37vw] w-[90vw]' >
                We Are Expanding Our Investment Portfolio,  While Also Giving Hundreds Of Smal businesses access to key capital</p>
                {/* <p  className='text-3xl bg-gradient-to-r from-white   to-black bg-clip-text text-transparent '>
               l</p>

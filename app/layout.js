@@ -1,6 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navber from "./components/Navber";
+import { Inter,Roboto } from 'next/font/google'
+
+const inter = Inter({  weight: ["100","200","300","400","500","600","700","800","900"], subsets: ['latin'] })
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black overflow-x-hidden`}
+        className={` ${inter.className} antialiased bg-black overflow-x-hidden`}
       >
         
         <Navber/>
