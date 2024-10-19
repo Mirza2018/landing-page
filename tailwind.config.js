@@ -8,13 +8,13 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        slide: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
+        'slide': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
         },
       },
       animation: {
-        slide: 'slide 30s linear infinite',
+        'slide': 'slide 30s linear infinite',
       },
       colors: {
         background: "var(--background)",

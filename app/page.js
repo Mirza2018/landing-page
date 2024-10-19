@@ -7,7 +7,10 @@ import LastBanner from "./components/LastBanner";
 export default function Home() {
   return (
  <div className="bg-black text-white ">
+ <div className="containerbg">
   <Banner/>
+
+ </div>
   <Features/>
   <Companies/>
   <InvestmentCard/>

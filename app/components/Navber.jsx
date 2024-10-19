@@ -3,8 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import logo from '../asset/logo.png'
 import Link from "next/link";
-import { FiSearch } from "react-icons/fi";
-import { FaBars, FaTimes } from 'react-icons/fa';
+
 import { useState } from "react";
 
 const Navber = () => {
@@ -22,7 +21,7 @@ const Navber = () => {
     ];
   
     return (
-        <div className='flex justify-around bg-black py-4'>
+        <div className='flex justify-around bg-black py-4 items-center'>
             {/* <div className='lg:hidden block'>
             <button
                       onClick={toggleMenu}
@@ -53,8 +52,8 @@ const Navber = () => {
 
             <Link href="/">
             <div className='flex justify-center items-center gap-2'>
-                <Image alt='logo' className='w-12 ' src={logo}/>
-            <h1 className='text-white uppercase font-bold tracking-wide md:text-2xl'>Blutomatic</h1>
+                <Image alt='logo' className='w-16 ' src={logo}/>
+            <h1 className='text-white uppercase font-bold tracking-wide md:text-2xl hover:text-b'>Blutomatic</h1>
             </div>
             </Link>
 
