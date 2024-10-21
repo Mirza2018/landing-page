@@ -1,7 +1,8 @@
+import { Inter } from 'next/font/google';
 import localFont from "next/font/local";
-import "./globals.css";
 import Navber from "./components/Navber";
-import { Inter,Roboto } from 'next/font/google'
+import "./globals.css";
+import Footer from './components/Footer';
 
 const inter = Inter({  weight: ["100","200","300","400","500","600","700","800","900"], subsets: ['latin'] })
 
@@ -27,9 +28,9 @@ export default function RootLayout({ children }) {
       <body
         className={` ${inter.className} antialiased bg-black overflow-x-hidden`}
       >
-        
-        <Navber/>
-        {children}
+          <Navber/> 
+        {children} 
+        <Footer/>
       </body>
     </html>
   );

@@ -4,11 +4,11 @@ import LogoSlider from './LogoSlider';
 const Companies = () => {
     return (
         <div className=''>
-            <div className='text-white text-center lg:text-6xl md:text-5xl  text-3xl font-semibold py-20'>
+            {/* <div className='text-white text-center lg:text-6xl md:text-5xl  text-3xl font-semibold py-20'>
             Companies That Started 
             <br />
             With Venture Capital
-            </div>
+            </div> */}
             <hr className='mb-10' />
             <LogoSlider/>
             <hr className='mt-10' />

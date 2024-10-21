@@ -19,11 +19,11 @@ import Image from 'next/image';
 // );
 
 const InvestmentSection = () => (
-  <div className=" bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center pt-10 ">
+  <div  id='advance' className=" bg-gray-900 pb-10 text-white min-h-screen flex flex-col items-center justify-center pt-10 ">
     <GiHorseHead className='text-9xl' />
-    <h2  className='md:text-2xl tracking-widest text-blue-600 font-semibold'>EXCLUSIVE FUNDING & KNOWLEDGE</h2>
+    <h2  className='md:text-2xl tracking-widest text-blue-600 font-semibold'>Unlock Your Digital Identity</h2>
     <h1 className="text-3xl font-bold mb-8 text-center">
-      Apply For Investment From Andrew Tate & The War Room
+    Create, Customize, and Own Your Unique AI Avatar with Advanced Technology
     </h1>
     <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start ">
 
@@ -37,14 +37,14 @@ const InvestmentSection = () => (
   lg:w-[700px] lg:h-56
    md:w-[600px] 
    
-   flex gap-6 p-10 my-2 rounded-3xl w-full`}>
-        <div className="md:text-8xl text-5xl  text-slate-300">{card.logo}</div>
+   flex gap-6 p-10 my-2 rounded-3xl w-full bg-fixed`}>
+        {/* <div className="md:text-8xl text-5xl  text-slate-300">{card.logo}</div> */}
         <div className='flex-1'>
-          <h1 className='md:text-5xl font-semibold'>{card.title}</h1>
+          <h1 className='md:text-4xl text-xl font-semibold'>{card.title}</h1>
             {
               card.points.map(point=>
-               <p key={point} className='flex gap-2  md:text-xl text-sm  text-zinc-400 pt-1'>
-                <FaCheck className='text-white' />
+               <p key={point} className='flex gap-2  md:text-xl text-xs  pt-1'>
+                {/* <FaCheck className='text-white' /> */}
                 {point}
               </p>)
             }
@@ -82,14 +82,14 @@ export default InvestmentSection;
 
 const cards=[
   {
-    title:"Large Fund Pool",
+    title:"A Dedicated Team of Editors & Scripters",
     points:[
       '$50M ready to invest in promising projects',
       '$20k - $1M investment allocation per project',
       'Reinvest profits back in the company',
     ],
     logo:<FaMoneyBillWave/>,
-    bg:"bg-[url('/cardBg1.webp')]",
+    bg:"bg-[url('/card1.png')]",
     direction:"",
     arrawImg:"/line_1.webp",
     arrclass:"bottom-0 right-5"
@@ -102,7 +102,7 @@ const cards=[
       'Investment via Crypto/Bank Transfer',
     ],
     logo:<FaCog/>,
-    bg:"bg-[url('/cardBg2.webp')]",
+    bg:"bg-[url('/card2.png')]",
     direction:"md:flex-row-reverse md:ps-44 ",
     arrawImg:"/line_2.png",
     arrclass:"bottom-0 left-5"
@@ -115,7 +115,7 @@ const cards=[
       'Open to other options',
     ],
     logo:<FaHandshake/>,
-    bg:"bg-[url('/money.png')]",
+    bg:"bg-[url('/card3.png')]",
     direction:"",
     isImg:false,
     arrclass:"bottom-0 right-0"

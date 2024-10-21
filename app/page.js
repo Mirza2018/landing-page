@@ -14,7 +14,7 @@ export default function Home() {
   <Features/>
   <Companies/>
   <InvestmentCard/>
-  <LastBanner/>
+  {/* <LastBanner/> */}
 
  </div>
   );

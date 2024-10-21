@@ -8,7 +8,7 @@ import { useState } from "react";
 import { HiBars3BottomLeft } from "react-icons/hi2";
 
 
-const Navber = () => {
+const Footer = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -25,20 +25,19 @@ const Navber = () => {
     ];
   
     return (
-        <div className='flex justify-around bg-black pt-4 items-center containerbg'>
+        <div className='flex justify-around bg-gray-800 pt-4 items-center '>
 
-            <div className=''>
+            <div className='relative'>
             <button
                      onClick={toggleMenu}
-                      className="inline-flex  items-center relative justify-center
-                       p-2 rounded-md text-white hover:text-white font-bold
-                       focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+                      className="inline-flex  items-center justify-center p-2 rounded-md text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
                       aria-label="Toggle menu"
                     >
                       <HiBars3BottomLeft className='text-2xl font-semibold me-1' /> MENU
                     </button>
 
-                   {isOpen &&   <div  onClick={toggleMenu} className="px-2 w-[180px] pt-2 pb-3 space-y-1 sm:px-3 absolute bg-black z-10 rounded-xl">
+                   {isOpen &&  
+                    <div  onClick={toggleMenu} className="px-2 bottom-10 w-[200px]  pt-2 pb-3 space-y-1 sm:px-3 absolute  bg-black z-10 rounded-xl">
                                     {menuItems.map((item) => (
                                       <Link
                                         key={item.name}
@@ -52,7 +51,9 @@ const Navber = () => {
                                         </span>
                                       </Link>
                                     ))}
-                                  </div>}
+                                  </div>
+                                            }
+                             
                       
             </div>
           
@@ -96,4 +97,4 @@ const Navber = () => {
     );
 };
 
-export default Navber;
+export default Footer;
