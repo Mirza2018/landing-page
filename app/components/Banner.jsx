@@ -5,13 +5,13 @@ import Link from 'next/link';
 
 const Banner = () => {
     return (
-        <div className=' md:py-40 py-2 text-center text-white mx-3'>
+        <div className=' md:py-40 py-2 text-center text-white '>
             {/* <h2  className='md:text-xl tracking-widest text-blue-600 font-semibold'>REVOLUTIONIZED FUNDING ACCESS </h2> */}
-            <h1 className='lg:text-7xl md:text-5xl text-4xl font-semibold text-wrap md:w-[50vw]  mx-auto '>Elevate Your Business with Avatar-Powered Content Creation</h1>
+            <h1 className='lg:text-[86px] md:text-5xl text-3xl font-bold text-wrap  mx-auto '>Elevate Your Business with <br /> Avatar-Powered Content Creation</h1>
                {/* <h1  className='text-8xl font-semibold'>  Venture Capital Funding</h1> */}
-               <p className='md:text-3xl text-xl pt-5 text-zinc-400  bg-clip-text text-transparent text-wrap w-auto mx-4 ' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras needed.&#34;</p>
+               <p className='lg:text-3xl md:ext-xl pt-5 text-zinc-400  bg-clip-text text-transparent text-wrap w-auto mx-4 ' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras <br /> needed.&#34;</p>
                {/* <p  className='text-3xl bg-gradient-to-r from-white via-white   to-black bg-clip-text text-transparent mb-6 '>extensive legality, paperwork and banking.</p> */}
-            <div className='md:mt-28 mt-4'>
+            <div className='md:mt-12 mt-4'>
             <VideoComponent  />
 
             </div>

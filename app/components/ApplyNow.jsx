@@ -86,19 +86,18 @@ const ApplicationForm = () => {
         <div className="min-w-3xl  p-8 bg-gray-800 bg-opacity-50 rounded-lg shadow-lg border-2">
         
   
-          <form onSubmit={handleFrom} className="space-y-4 w-[50vw]">
+          <form onSubmit={handleFrom} className="space-y-4 md:w-[50vw] ">
         
   
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="Full Name" className="block text-white   mb-2">Full Name*</label>
+                <label htmlFor="Full Name" className="block text-white  mb-2">Full Name*</label>
                 <input
-                  id="namer"
+                  id="name"
                   type="name"
                   placeholder="Full Name"
                   name="name"
-
-                  className=" w-full px-3 py-5  rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400" />
+                  className=" w-full px-3 md:py-4 py-2  rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400" />
               </div>
   
               <div>
@@ -108,29 +107,28 @@ const ApplicationForm = () => {
                   type="email"
                   placeholder="Email address"
                   name="eamil"
-
-                  className=" w-full px-3 py-5  rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400"  />
+                  className=" w-full px-3 md:py-4 py-2   rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400"  />
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="phoneNumber" className="block text-white  mb-2 pb-6 lg:pb-0">Phone Number*</label>
+                <label htmlFor="phoneNumber" className="block text-white  mb-2 ">Phone Number*</label>
                 <input
                   id="phoneNumber"
                   type="tel"
                   placeholder="Phone Number"
                   name="phone"
-                  className=" w-full px-3 py-5  rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400" />
+                  className=" w-full px-3 md:py-4 py-2  rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400" />
               </div>
   
               <div>
-                <label htmlFor="socialMedia" className="block text-white e mb-2">Social Media Handle (Optional)</label>
+                <label htmlFor="socialMedia" className="block text-white  mb-2">Social Media Handle</label>
                 <input
                   id="socialMedia"
                   type="text"
                   placeholder="Social Media Handle"
                 name="social"
-                  className=" w-full px-3 py-5  rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400" />
+                  className=" w-full px-3  md:py-4 py-2   rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400" />
               </div>
             </div>
   
@@ -139,14 +137,14 @@ const ApplicationForm = () => {
               <textarea
                 id="aboutBrand"
                 name="about"
-                className=" w-full px-3 py-5  rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400"  rows="4"
+                className=" w-full md:py-4 py-2   rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400"  rows="4"
               ></textarea>
             </div>
   
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="px-6 py-5 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-500 transition-colors flex flex-shrink-0"
+                className="px-6 md:py-4 py-2  bg-blue-600 text-white font-bold rounded-full hover:bg-blue-500 transition-colors flex flex-shrink-0"
               >
                 Submit Your Application
               </button>

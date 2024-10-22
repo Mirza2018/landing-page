@@ -1,56 +1,55 @@
-import React from "react";
-// import video from "../asset/demo.mp4"
+"use client"
+import React, { useState, useRef } from "react";
+import { FaPlayCircle, FaPauseCircle } from "react-icons/fa";
 
 const VideoComponent = () => {
+  const [isPlaying, setIsPlaying] = useState(false); // Initially playing without sound
+  const videoRef = useRef(null); // Reference to the video element
+
+  const handlePlayPauseClick = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause(); // Pause the video
+      } else {
+        videoRef.current.muted = false; // Unmute the video
+        videoRef.current.volume = 0.3; // Set volume to 50%
+        videoRef.current.play(); // Play the video
+      }
+      setIsPlaying(!isPlaying); // Toggle play/pause state
+    }
+  };
+
   return (
-    <div className="flex items-center justify-center  ">
+    <div className="flex items-center justify-center relative">
       <video
+        ref={videoRef}
         className="w-full max-w-4xl rounded-lg shadow-lg"
-        controls
         autoPlay
         loop
-        muted
+        muted // Initially muted for autoplay
       >
-        <source src='/demo.mp4' type="video/mp4" />
+        <source src="/demo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
+      {/* Play/Pause Button */}
+      <div
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer"
+        onClick={handlePlayPauseClick}
+      >
+        {isPlaying ? (
+          <FaPauseCircle className="text-6xl" />
+        ) : (
+          <FaPlayCircle className="text-6xl" />
+        )}
+
+
+
+
+      </div>
+      
     </div>
   );
 };
 
 export default VideoComponent;
-
-// "use client"
-
-// import React, { useEffect, useState } from "react";
-// import ReactPlayer from "react-player"; // Example for video component
-
-// const VideoComponent = () => {
-//   const [isMounted, setIsMounted] = useState(false);
-
-//   // Ensuring the component mounts only on the client
-//   useEffect(() => {
-//     setIsMounted(true);
-//   }, []);
-
-//   if (!isMounted) {
-//     return null; // Prevent server-side rendering
-//   }
-
-//   return (
-//     <div className="video-wrapper">
-//       <ReactPlayer
-//         url="/demo.mp4"
-//         playing={true}
-//         loop={true}
-//         muted={true}
-//         controls={true}
-//         width="100%"
-//         height="100%"
-//       />
-//     </div>
-//   );
-// };
-
-// export default VideoComponent;

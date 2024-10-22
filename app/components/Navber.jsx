@@ -18,9 +18,9 @@ const Navber = () => {
   
     const menuItems = [
       { name: 'Home',path:'/' },
-      { name: 'Apply now',path:'apply-now'  },
-      { name: 'Get Start',path:'#getStart' },
-      { name: 'Advance',path:'#advance'  },
+      { name: 'Apply now',path:'/apply-now'  },
+      { name: 'Get Start',path:'/#getStart' },
+      { name: 'Advance',path:'/#advance'  },
      
     ];
   
@@ -28,15 +28,15 @@ const Navber = () => {
         <div className='flex justify-around bg-black pt-4 items-center containerbg'>
 
             <div className=''>
-            <button
+            <div
                      onClick={toggleMenu}
                       className="inline-flex  items-center relative justify-center
                        p-2 rounded-md text-white hover:text-white font-bold
-                       focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+                       focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out cursor-pointer"
                       aria-label="Toggle menu"
                     >
-                      <HiBars3BottomLeft className='text-2xl font-semibold me-1' /> MENU
-                    </button>
+                      <HiBars3BottomLeft className='text-3xl font-bold me-1' /> MENU
+                    </div>
 
                    {isOpen &&   <div  onClick={toggleMenu} className="px-2 w-[180px] pt-2 pb-3 space-y-1 sm:px-3 absolute bg-black z-10 rounded-xl">
                                     {menuItems.map((item) => (
@@ -58,9 +58,10 @@ const Navber = () => {
           
 
             <Link href="/">
-            <div className='flex justify-center items-center gap-2'>
-                <Image alt='logo' className='w-16 ' src={logo}/>
-            <h1 className='text-white uppercase font-bold tracking-wide md:text-2xl hover:text-b'>Blutomatic</h1>
+            <div className='flex justify-center items-center md:gap-2 '>
+                <Image alt='logo' className='md:w-24 w-14' src={logo}/>
+            <h1 className='text-white uppercase font-[600] 
+             md:text-3xl text-xl'>Blutomatic</h1>
             </div>
             </Link>
 
