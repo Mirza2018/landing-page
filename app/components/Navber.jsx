@@ -25,7 +25,7 @@ const Navber = () => {
     ];
   
     return (
-        <div className='flex justify-around bg-black pt-4 items-center containerbg'>
+        <div className='flex justify-around bg-black md:p-6  items-center containerbg'>
 
             <div className=''>
             <div
@@ -35,7 +35,8 @@ const Navber = () => {
                        focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out cursor-pointer"
                       aria-label="Toggle menu"
                     >
-                      <HiBars3BottomLeft className='text-3xl font-bold me-1' /> MENU
+                      <HiBars3BottomLeft className='text-3xl font-bold me-1 ' /> <span className="md:block hidden" >
+                        MENU </span>
                     </div>
 
                    {isOpen &&   <div  onClick={toggleMenu} className="px-2 w-[180px] pt-2 pb-3 space-y-1 sm:px-3 absolute bg-black z-10 rounded-xl">

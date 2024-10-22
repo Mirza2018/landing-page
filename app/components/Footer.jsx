@@ -25,35 +25,42 @@ const Footer = () => {
     ];
   
     return (
-        <div className='flex justify-around bg-gray-900 py-1 items-center '>
+        <div className='flex justify-around pt-4 items-center bg-gray-900'>
 
             <div className='relative'>
             <div
                      onClick={toggleMenu}
-                      className="inline-flex cursor-pointer  items-center justify-center p-2 rounded-md text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+                      className="inline-flex  items-center relative justify-center
+                       p-2 rounded-md text-white hover:text-white font-bold
+                       focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out cursor-pointer"
                       aria-label="Toggle menu"
                     >
-                      <HiBars3BottomLeft className='text-2xl font-semibold me-1' /> MENU
+                      <HiBars3BottomLeft className='text-3xl font-bold me-1 ' /> <span className="md:block hidden" >
+                        MENU </span>
                     </div>
 
                    {isOpen &&  
-                    <div  onClick={toggleMenu} className="px-2 bottom-10 w-[200px]  pt-2 pb-3 space-y-1 sm:px-3 absolute  bg-black z-10 rounded-xl">
-                                    {menuItems.map((item) => (
-                                      <Link
-                                        key={item.name}
-                                        href={`${item.path}`}
-                                        className="block  px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 transition duration-150 ease-in-out"
-                                        aria-label={item.name}
-                                      >
-                                        <span className="flex items-center">
-                                          {item.icon}
-                                          <span className="">{item.name}</span>
-                                        </span>
-                                      </Link>
-                                    ))}
-                                  </div>
-                                            }
-                             
+                    <div  onClick={toggleMenu} className="px-2 bottom-10 w-[150px]  pt-2 pb-3 space-y-1 sm:px-3 absolute  bg-black z-10 rounded-xl">
+                    {menuItems.map((item) => (
+                      <Link
+                        key={item.name}
+                        href={`${item.path}`}
+                        className="block  px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 transition duration-150 ease-in-out"
+                        aria-label={item.name}
+                      >
+                        <span className="flex items-center">
+                          {item.icon}
+                          <span className="">{item.name}</span>
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                                  
+                                  
+                                  }
+
+
+
                       
             </div>
           

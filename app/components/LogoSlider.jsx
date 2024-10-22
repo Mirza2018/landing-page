@@ -3,7 +3,7 @@ import { FaAmazon, FaAirbnb, FaSpotify, FaUber, FaFacebook, FaGoogle } from "rea
 
 const LogoSlider = () => {
   return (
-    <div className="overflow-hidden  py-4 bg-black">
+    <div className="overflow-hidden  py-4 bg-gradient-to-r from-gray-800 via-gray-800 to-gray-600">
       {/* Container for the infinite slide */}
       <div className="flex w-max gap-36">
         {/* Logos - Only one set of logos, repeated via CSS */}
