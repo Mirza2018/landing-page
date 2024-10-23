@@ -65,10 +65,11 @@ const Footer = () => {
             </div>
           
 
+           
             <Link href="/">
             <div className='flex justify-center items-center md:gap-2 '>
-                <Image alt='logo' className='md:w-24 w-14' src={logo}/>
-            <h1 className='text-white uppercase font-[600] 
+                <Image alt='logo' className='md:w-16 lg:w-24 w-14' src={logo}/>
+            <h1 className='text-white uppercase font-semibold
              md:text-3xl text-xl'>Blutomatic</h1>
             </div>
             </Link>

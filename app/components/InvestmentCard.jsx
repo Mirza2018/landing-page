@@ -7,8 +7,8 @@ import Image from 'next/image';
 const InvestmentSection = () => (
   <div  id='advance' className=" bg-gray-900 containerbg md:pb-10 lg:pb-[70px] text-white min-h-screen flex flex-col items-center justify-center pt-10  ">
 
-    <h2  className='2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[24px] text-blue-600 font-semibold pb-4 mx-2 text-center'>Unlock Your Digital Identity</h2>
-    <h1 className="2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[32px] text-slate-300 font-bold mb-8 text-center">
+    <h2  className='2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[24px] text-blue-600  pb-4 mx-2 text-center font-medium'>Unlock Your Digital Identity</h2>
+    <h1 className="2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[32px] text-slate-300 font-semibold mb-8 text-center">
     Create, Customize, and Own Your Unique AI Avatar with Advanced Technology
     </h1>
     <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start ">
@@ -34,7 +34,7 @@ const InvestmentSection = () => (
     </h1>
     {
       card.points.map(point => 
-        <p key={point} className='mt-3 flex gap-2  2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px] text-white pt-1 shadow-lg text-justify'>
+        <p key={point} className='mt-3 flex gap-2 font-medium  2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px] text-white pt-1 shadow-lg text-justify'>
           {point}
         </p>
       )

@@ -23,7 +23,7 @@ const VideoComponent = () => {
     <div className="flex items-center justify-center relative">
       <video
         ref={videoRef}
-        className="w-full max-w-4xl rounded-lg shadow-lg"
+        className="w-[74vw]  rounded-lg shadow-lg"
         autoPlay
         loop
         muted // Initially muted for autoplay
