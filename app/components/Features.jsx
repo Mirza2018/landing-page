@@ -7,14 +7,14 @@ import Link from 'next/link';
 
 export default function Features() {
   return (
-    <div id="getStart" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-12 px-6 lg:mx-8 xl:mx-0">
+    <div id="getStart" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white md:py-12 py-4 px-6 lg:mx-8 xl:mx-0">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row  items-center gap-[54px]">
         {/* Left Side - Main Text */}
         <div className="flex-1">
           <h1 className="2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[32px] font-semibold leading-tight mb-6  ">
             Revolutionize Your Content Creation with AI Avatars
           </h1>
-          <p className="2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[22px] leading-9 mb-8 font-semibold text-justify md:w-[32vw]">
+          <p className="2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[22px] leading-9 mb-8 font-semibold md:text-justify text-balance md:w-[32vw]">
             We help businesses create professional content using custom-made avatars, eliminating the need for being on camera.
           </p>
           <Link href={"/apply-now"}>
