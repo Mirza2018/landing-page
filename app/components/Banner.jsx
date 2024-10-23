@@ -10,7 +10,19 @@ const Banner = () => {
 
          
             {/* <h2  className='md:text-xl tracking-widest text-blue-600 font-semibold'>REVOLUTIONIZED FUNDING ACCESS </h2> */}
-            <h1 className='z-10 2xl:text-[86px] xl:text-[72px] lg:text-[62px] md:text-[48px] text-[32px] relative leading-tight font-bold text-wrap text-center md:mx-5 md:mt-0 mt-[24px]  mx-2 '>Elevate Your Business with <br /> Avatar-Powered Content Creation</h1>
+
+
+            <h1 className='md:hidden z-10 2xl:text-[86px] xl:text-[72px] lg:text-[62px] md:text-[48px] text-[32px] relative 
+            leading-tight font-bold text-wrap text-center md:mx-5 md:mt-0 mt-[24px]  mx-2 '>Elevate Your Business with<span className='md:block hidden'><br /> </span> Avatar-Powered Content Creation</h1>
+
+            <h1 className='md:block hidden z-10 2xl:text-[86px] xl:text-[72px] lg:text-[62px] md:text-[48px] text-[32px] relative 
+            leading-tight font-bold text-wrap text-center md:mx-5 md:mt-0 mt-[24px]  mx-2 '>Elevate Your Business with <br /> Avatar-Powered Content Creation</h1>
+
+
+
+
+
+
                {/* <h1  className='text-8xl font-semibold'>  Venture Capital Funding</h1> */}
              
 
