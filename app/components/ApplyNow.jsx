@@ -158,7 +158,7 @@ const ApplicationForm = () => {
               <button
                 type="submit"
                 className="z-10 px-6 md:py-4 py-3 mt-[60px]
-                 font-semibold bg-blue-600 text-white  rounded-full hover:bg-blue-500 transition-colors 
+                 font-semibold bg-blue-600 text-white  rounded-full hover:text-blue-500 duration-500  hover:bg-white transition-colors 
                  flex flex-shrink-0 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px] "
               >
                 Submit Your Application
