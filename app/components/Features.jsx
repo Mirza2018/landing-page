@@ -31,11 +31,11 @@ export default function Features() {
 
         <div className="flex flex-col items-center md:items-start gap-[9px]">
   {/* Top Section: Image and Text */}
-  <div className="rounded-lg shadow-lg text-center max-w-lg grid grid-cols-2 gap-[17px]">
+  <div className="rounded-lg shadow-lg text-center max-w-lg grid md:grid-cols-2 md:gap-[17px] gap-[9px] ">
     <Image
       src={aiImg} // Replace with actual path
       alt="AI Avatar"
-      className="rounded-lg w-fit h-full"
+      className="rounded-lg w-fit h-full "
     />
     <div className="bg-gray-800 rounded-lg flex flex-col justify-around lg:px-4 xl:px-6 md:px-2">
       <h3 className="2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[22px] font-semibold">1M+ <br /> Content Created</h3>
