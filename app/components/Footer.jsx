@@ -25,7 +25,7 @@ const Footer = () => {
     ];
   
     return (
-        <div className='flex justify-around pt-4 items-center bg-gray-900'>
+        <div className='flex justify-around pt-4 xl:mt-[210px] md:mt-[100px] mt-[30px] items-center bg-gray-900'>
 
             <div className='relative'>
             <div

@@ -9,9 +9,9 @@ const Companies = () => {
             <br />
             With Venture Capital
             </div> */}
-            <hr className='mb-10 ' />
+            <hr className='lg:mb-10  md:mb-5' />
             <LogoSlider/>
-            <hr className='mt-10' />
+            <hr className='lg:mt-10 md:mt-5' />
 
         </div>
     );

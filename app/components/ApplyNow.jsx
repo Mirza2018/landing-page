@@ -42,6 +42,13 @@ const ApplicationForm = () => {
           });
           return 
         }
+        else if(!about){
+          Swal.fire({
+            title: "Please Tell Us About Your Brand",
+            icon: "error"
+          });
+          return 
+        }
         else if (!(/^(?:\+?\d{1,3}[-. ]?)?(?:\(?\d{2,4}\)?[-. ]?)?\d{3}[-. ]?\d{4}$/.test(phone))) {
           Swal.fire({
             title: "Give a Valid Mobile Number!",
@@ -84,7 +91,7 @@ const ApplicationForm = () => {
   
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="Full Name" className="block text-white mb-2 2xl:text-[17.5px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px] ">Full Name*</label>
+                <label htmlFor="Full Name" className="block text-white  2xl:text-[17.5px] md:text-[16px] text-[14px] ">Full Name*</label>
                 <input
                   id="name"
                   type="name"
@@ -94,18 +101,18 @@ const ApplicationForm = () => {
               </div>
   
               <div>
-                <label htmlFor="Email Address" className="block text-white  mb-2 2xl:text-[17.5px]  md:text-[16px] text-[14px] ">Email Address*</label>
+                <label htmlFor="Email Address" className="block text-white   2xl:text-[17.5px]  md:text-[16px] text-[14px] ">Email Address*</label>
                 <input
                   id="email"
                   type="email"
                   placeholder="Email address"
                   name="eamil"
-                  className=" w-full px-3 md:py-4 py-3   rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400"  />
+                  className=" w-full px-3 md:py-4 py-3 rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400"  />
               </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:mt-2">
-              <div>
-                <label htmlFor="phoneNumber" className="block md:mt-0 mt-2 text-white  mb-2 2xl:text-[17.5px]   md:text-[16px] text-[14px] ">Phone Number*</label>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:mt-2 ">
+              <div className="mt-2 md:mt-0">
+                <label htmlFor="phoneNumber" className="block   text-white  2xl:text-[17.5px]   md:text-[16px] text-[14px] ">Phone Number*</label>
                 <input
                   id="phoneNumber"
                   type="tel"
@@ -115,17 +122,17 @@ const ApplicationForm = () => {
               </div>
   
               <div>
-                <label htmlFor="socialMedia" className="block text-white  mb-2 2xl:text-[17.5px]  text-[14px] ">Social Media Handle</label>
+                <label htmlFor="socialMedia" className="block text-white   2xl:text-[17.5px]  text-[14px] ">Social Media Handle</label>
                 <input
                   id="socialMedia"
                   type="text"
                   placeholder="Social Media Handle"
                 name="social"
-                  className=" w-full px-3  md:py-4 py-3   rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400" />
+                  className=" w-full px-3  md:py-4 py-3 rounded-xl bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400" />
               </div>
             </div>
   
-            <div className="mt-2" >
+            <div className="" >
               <label htmlFor="aboutBrand" className=" block text-white text-sm mb-2 2xl:text-[17.5px]  md:text-[16px] text-[14px]">Tell Us About Your Brand*</label>
               <textarea
                 id="aboutBrand"

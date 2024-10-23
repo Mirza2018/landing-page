@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function Features() {
   return (
-    <div id="getStart" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-12 px-6">
+    <div id="getStart" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-12 px-6 lg:mx-8 xl:mx-0">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row  items-center gap-[54px]">
         {/* Left Side - Main Text */}
         <div className="flex-1">
@@ -18,7 +18,7 @@ export default function Features() {
             We help businesses create professional content using custom-made avatars, eliminating the need for being on camera.
           </p>
           <Link href={"/apply-now"}>
-          <button className="md:mt-20 border-[#237bff] bg-[#237bff] hover:bg-blue-600
+          <button className="lg:mt-20 md:mt-5   border-[#237bff] bg-[#237bff] hover:bg-blue-600
            text-white font-semibold py-4 px-72xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]  rounded-full flex items-center
             px-3  gap-2 flex-shrink-0">
             <span>Get Started Today</span>
