@@ -26,9 +26,16 @@ const Banner = () => {
                {/* <h1  className='text-8xl font-semibold'>  Venture Capital Funding</h1> */}
              
 
-               <p className=' 2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[20px] 
+               <p className='md:hidden 2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[20px] 
+               pt-5 text-white bg-clip-text  text-wrap w-auto mx-4 mt-[24px] font-semibold' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras 
+                needed.&#34;</p>
+
+               <p className='md:block hidden 2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[20px] 
                pt-5 text-white bg-clip-text  text-wrap w-auto mx-4 mt-[24px] font-semibold' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras <br />
                 needed.&#34;</p>
+
+
+
                 <div className="absolute inset-0 bg-black opacity-50 rounded-3xl">
                <div className="absolute xl:w-[110vh] md:w-[50vh] w-[50%] h-[60vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-700 to-blue-900
                 opacity-90 blur-3xl 2xl:left-1/4 xl:left-[28%]  lg:left-[30%] md:left-[20%] left-[20%] "></div>
