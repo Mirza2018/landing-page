@@ -14,7 +14,7 @@ export default function Features() {
           <h1 className="2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[32px] font-semibold leading-tight mb-6  ">
             Revolutionize Your Content Creation with AI Avatars
           </h1>
-          <p className="2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[22px] leading-9 mb-8 font-semibold md:text-justify text-balance md:w-[32vw]">
+          <p className="2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[22px] leading-9 mb-8 font-semibold  md:text-balance  text-start ">
             We help businesses create professional content using custom-made avatars, eliminating the need for being on camera.
           </p>
           <Link href={"/apply-now"}>
@@ -35,7 +35,7 @@ export default function Features() {
     <Image
       src={aiImg} // Replace with actual path
       alt="AI Avatar"
-      className="rounded-lg w-fit h-full "
+      className="rounded-lg w-fit h-full aspect-square "
     />
     <div className="bg-gray-800 rounded-lg flex flex-col justify-around lg:px-4 xl:px-6 md:px-2">
       <h3 className="2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[22px] font-semibold">1M+ <br /> Content Created</h3>
