@@ -81,7 +81,7 @@ const ApplicationForm = () => {
 
     return (
 
-        <div className="containerbg min-h-screen flex flex-col justify-center items-center mt-4">
+        <div className="containerbg md:min-h-screen flex flex-col justify-center items-center md:mt-4 md:py-0 py-20 ">
               <h1 className="text-center  2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[24px] text-white font-semibold mb-8 ">Begin Application Now</h1>
               <div className=" flex items-center justify-center bg-transparent opacity-90 ">
               {/* <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-800"> */}
