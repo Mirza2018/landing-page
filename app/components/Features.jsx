@@ -19,7 +19,7 @@ export default function Features() {
           </p>
           <Link href={"/apply-now"}>
           <button className="lg:mt-20 md:mt-5   border-[#237bff] bg-[#237bff] hover:bg-blue-600
-           text-white font-semibold py-5 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]  rounded-full flex items-center
+           text-white font-semibold md:py-5 py-4 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]  rounded-full flex items-center
             px-4  gap-2 flex-shrink-0">
             <span>Get Started Today</span>
             <FaArrowRight />

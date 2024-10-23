@@ -8,11 +8,12 @@ const InvestmentSection = () => (
   <div  id='advance' className=" bg-gray-900 containerbg md:pb-10 lg:pb-[70px] text-white min-h-screen flex flex-col items-center justify-center pt-10  ">
 
     <h2  className='2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[22px] text-blue-600  pb-4 mx-2 text-center font-medium'>Unlock Your Digital Identity</h2>
-    <h1 className="md:hidden 2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[28px] text-slate-300 font-semibold mb-8 text-center">
+    <h1 className="md:hidden 2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[26px] text-slate-300 font-semibold mb-8 text-center mx-1">
     Create, Customize, and Own Your Unique AI  Avatar with Advanced Technology
     </h1>
-    <h1 className="md:block hidden 2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[32px] text-slate-300 font-semibold mb-8 text-center">
-    Create, Customize, and Own Your Unique AI <br /> Avatar with Advanced Technology
+    <h1 className="md:block hidden 2xl:text-[62px]  xl:text-[56px] lg:text-[46px] 
+    md:text-[40px] text-[32px] text-slate-300 font-semibold mb-8 text-center ">
+    Create, Customize, and Own Your Unique AI <br />Avatar with Advanced Technology
     </h1>
     <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start ">
 
