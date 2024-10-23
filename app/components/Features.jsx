@@ -18,7 +18,7 @@ export default function Features() {
             We help businesses create professional content using custom-made avatars, eliminating the need for being on camera.
           </p>
           <Link href={"/apply-now"}>
-          <button className="lg:mt-20 md:mt-5   border-[#237bff] bg-[#237bff] hover:bg-blue-600
+          <button className="lg:mt-20 md:mt-5   border-[#237bff] bg-[#237bff] hover:text-blue-500 duration-500  hover:bg-white
            text-white font-semibold md:py-5 py-4 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]  rounded-full flex items-center
             px-4  gap-2 flex-shrink-0">
             <span>Get Started Today</span>
