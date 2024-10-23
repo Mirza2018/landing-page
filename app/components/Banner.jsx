@@ -19,7 +19,7 @@ const Banner = () => {
                 needed.&#34;</p>
                 <div className="absolute inset-0 bg-black opacity-50 rounded-3xl">
                <div className="absolute xl:w-[110vh] md:w-[50vh] w-[50%] h-[60vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-700 to-blue-900
-                opacity-90 blur-3xl 2xl:left-1/4 xl:left-[28%]  lg:left-[30%] md:left-[20%] left-[10%] "></div>
+                opacity-90 blur-3xl 2xl:left-1/4 xl:left-[28%]  lg:left-[30%] md:left-[20%] left-[20%] "></div>
                 </div>
                {/* <p  className='text-3xl bg-gradient-to-r from-white via-white   to-black bg-clip-text text-transparent mb-6 '>extensive legality, paperwork and banking.</p> */}
                </div>
