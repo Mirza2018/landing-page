@@ -68,8 +68,8 @@ const ApplicationForm = () => {
         .then((res)=>{
          
           Swal.fire({
-            title: "Application Done!",
-            text: "We will Contract You!",
+            title: "Application Done",
+            text: "We will contact you soon!",
             icon: "success"
           });
           e.target.reset()
