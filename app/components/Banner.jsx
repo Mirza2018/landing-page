@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Banner = () => {
     return (
-        <div className=' md:py-40 py-2 text-center text-white '>
+        <div className=' md:pt-[120px] pt-2 md:pb-[50px] pb-2 text-center text-white '>
             <div className='relative'>
 
          
@@ -30,7 +30,7 @@ const Banner = () => {
 
             </div>
             <Link href={"/apply-now"}>
-            <button className='bg-blue-500 flex-shrink-0 md:mt-20 mt-4 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]
+            <button className='bg-blue-500 flex-shrink-0 md:mt-16 mt-4 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]
              hover:text-blue-500 duration-500  hover:bg-white font-semibold md:py-[17px]  lg:py-[23px] lg:px-[17px] md:px-[12px] px-[10px] py-[14px] rounded-full flex mx-auto gap-2 items-center '>
             Generate Yours Now
                 <FaArrowRight />

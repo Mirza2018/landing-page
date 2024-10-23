@@ -11,10 +11,10 @@ export default function Features() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row  items-center gap-[54px]">
         {/* Left Side - Main Text */}
         <div className="flex-1">
-          <h1 className="2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[32px] font-semibold leading-tight mb-6 ">
+          <h1 className="2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[32px] font-semibold leading-tight mb-6  ">
             Revolutionize Your Content Creation with AI Avatars
           </h1>
-          <p className="2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[22px]  mb-8 font-semibold">
+          <p className="2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[22px] leading-9 mb-8 font-semibold text-justify md:w-[32vw]">
             We help businesses create professional content using custom-made avatars, eliminating the need for being on camera.
           </p>
           <Link href={"/apply-now"}>
