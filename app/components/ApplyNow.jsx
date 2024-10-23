@@ -81,15 +81,15 @@ const ApplicationForm = () => {
 
     return (
 
-        <div className="containerbg md:min-h-screen flex flex-col justify-center items-center md:mt-4 md:py-0 py-20 ">
+        <div className="containerbg  flex flex-col justify-center items-center md:mt-4  py-20 ">
               <h1 className="text-center  2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[24px] text-white font-semibold mb-8 ">Begin Application Now</h1>
               <div className=" flex items-center justify-center bg-transparent opacity-90 ">
               {/* <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-800"> */}
           <form onSubmit={handleFrom} className="space-y-4 md:w-[50vw] w-[90vw] relative">
         <div className="md:min-w-3xl md:p-8 p-2   rounded-2xl shadow-lg border-2  bg-transparent  z-20 bg-gray-600 bg-opacity-20">
       
-        <div className="absolute xl:w-[90vh] md:w-[50vh] w-[50%] h-[30vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-700 to-blue-900
-                opacity-55 blur-3xl top-3 -z-20"></div>
+        <div className="absolute xl:w-[90vh] md:w-[50vh] w-[50%] h-[50vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-700 to-blue-900
+                opacity-55 blur-3xl -top-10 -z-20"></div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4  ">
               <div>
                 <label htmlFor="Full Name" className="block text-white  2xl:text-[17.5px] md:text-[16px] text-[14px] z-10 ">Full Name*</label>
@@ -149,7 +149,9 @@ const ApplicationForm = () => {
         <div className="flex justify-center">
               <button
                 type="submit"
-                className="z-10 px-6 md:py-4 py-3 font-semibold bg-blue-600 text-white  rounded-full hover:bg-blue-500 transition-colors flex flex-shrink-0 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px] "
+                className="z-10 px-6 md:py-4 py-3
+                 font-semibold bg-blue-600 text-white  rounded-full hover:bg-blue-500 transition-colors 
+                 flex flex-shrink-0 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px] "
               >
                 Submit Your Application
               </button>
