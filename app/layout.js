@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
       </head>
       <body
-        className={`${inter.className} antialiased bg-black overflow-x-hidden`}
+        className={`${inter.className} antialiased bg-[#040411] overflow-x-hidden`}
       >
         <Navber /> 
         {children}

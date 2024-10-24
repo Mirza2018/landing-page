@@ -1,6 +1,9 @@
 'use client'
 import axios from "axios";
+import Image from "next/image";
 import Swal from "sweetalert2";
+import sideImg from "../asset/sideImg1.png"
+
 const ApplicationForm = () => {
     const handleFrom=(e)=>{
         e.preventDefault()
@@ -81,16 +84,29 @@ const ApplicationForm = () => {
 
     return (
 
-      <div className="pt-[85px] containerbg md:-mb-[100px]">
-              <h1 className="text-center  2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[24px] text-white font-semibold mb-[50px] ">Begin Application Now</h1>
+      <div className="pt-[85px] containerbg  md:mb-[106px] mb-8 bg-[#040411]">
+              <h1 className="text-center  2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[24px] text-white font-semibold mb-[50px] z-20">Begin Application Now</h1>
+
+
+               {/* Image Positioned with CSS */}
+              <div className="absolute  top-[65%] transform -translate-y-1/2    ">
+                        <Image alt="side Img" src={sideImg} className="object-contain -z-10" />
+                    </div>
+              <div className="absolute  right-2  top-[90%] transform -translate-y-1/2    ">
+                        <Image alt="side Img" src={sideImg} className="object-contain -z-10" />
+                    </div>
+
+              {/* <div className="absolute right-0  top-[90%] transform -translate-y-1/2   -z-20 ">
+                        <Image alt="side Img" src={sideImg} className="object-contain" />
+                    </div> */}
 
               <div className=" flex items-center justify-center bg-transparent opacity-90 ">
+              <div className="absolute xl:w-[60%] md:w-[50vh] w-[50%] h-[50vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-700 opacity-70 blur-[200px] top-[30%] -z-20"></div>
               {/* <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-800"> */}
           <form onSubmit={handleFrom} className="space-y-4 lg:w-[50vw] w-[90vw] relative">
-        <div className="md:border-[1px] border-[#E5E7EB] rounded-3xl  bg-gradient-to-r from-white/8 to-gray-400/8 lg:p-[65px] md:p-10  p-1">
+        <div className="md:border-[1px] border-[#E5E7EB] rounded-3xl   lg:p-[65px] md:p-10  p-1">
       
-        <div className="absolute xl:w-[90vh] md:w-[50vh] w-[50%] h-[50vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-700 to-blue-900
-                opacity-70 blur-[90px] -top-10 -z-20"></div>
+       
 
 {/* 
                <div className=" xl:w-[90vh] md:w-[50vh] w-[50%] h-[50vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-700 to-blue-900
@@ -155,14 +171,19 @@ const ApplicationForm = () => {
       
         </div>
         <div className="flex justify-center">
-              <button
-                type="submit"
-                className="z-10 px-6 md:py-4 py-3 mt-[60px]
-                 font-semibold bg-blue-600 text-white  rounded-full hover:text-blue-500 duration-500  hover:bg-white transition-colors 
-                 flex flex-shrink-0 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px] "
-              >
-                Submit Your Application
-              </button>
+        <button
+  type="submit"
+  className="z-10 px-[17px] md:py-[23px] py-3 mt-[60px]
+    font-semibold bg-[#237bff] text-white rounded-full hover:text-blue-500 duration-500 hover:bg-white transition-colors
+    flex flex-shrink-0 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]
+    shadow-[0_4px_70px_0_rgba(35,123,255,0.5)]"
+>
+  Submit Your Application
+</button>
+
+
+
+              
             </div>
              
                 {/* opacity-90 blur-3xl 2xl:left-1/4 xl:left-[28%]  lg:left-[30%] md:left-[20%] left-[10%]  top-1/3"></div> */}

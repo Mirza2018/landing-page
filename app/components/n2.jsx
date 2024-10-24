@@ -1,35 +1,20 @@
 "use client"
 import Image from 'next/image';
-import React, { useEffect,useRef,useState } from 'react';
+import React from 'react';
 import logo from '../asset/logo.png'
 import Link from "next/link";
+
+import { useState } from "react";
 import { HiBars3BottomLeft } from "react-icons/hi2";
 
 
-const Footer = () => {
+const Navber = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const menuRef = useRef(null); // Create a ref to track the menu
 
     const toggleMenu = () => {
       setIsOpen(!isOpen);
     };
-   // Close the menu when clicking outside
-   useEffect(() => {
-    const handleClickOutside = (event) => {
-      // If the menu is open and the click is outside the menuRef, close the menu
-      if (isOpen && menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsOpen(false);
-      }
-    };
-
-    // Add event listener for clicks outside
-    document.addEventListener('mousedown', handleClickOutside);
-
-    // Cleanup event listener on unmount
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isOpen]);
+  
   
     const menuItems = [
       { name: 'Home',path:'/' },
@@ -40,9 +25,9 @@ const Footer = () => {
     ];
   
     return (
-        <div className='flex justify-around items-center bg-[#161622] z-10 bg-transparent'>
+        <div className='flex justify-around bg-black md:p-6  items-center containerbg'>
 
-            <div className='relative'>
+            <div className=''>
             <div
                      onClick={toggleMenu}
                       className="inline-flex  items-center relative justify-center
@@ -54,35 +39,25 @@ const Footer = () => {
                         MENU </span>
                     </div>
 
-                   {isOpen &&  
-                    <div  
-                    ref={menuRef} // Attach the ref to the menu container
-                    onClick={toggleMenu} className="px-2 bottom-10 w-[150px]  pt-2 pb-3 space-y-1 sm:px-3 absolute  bg-black z-10 rounded-xl">
-                    {menuItems.map((item) => (
-                      <Link
-                        key={item.name}
-                        href={`${item.path}`}
-                        className="block  px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 transition duration-150 ease-in-out"
-                        aria-label={item.name}
-                      >
-                        <span className="flex items-center">
-                          {item.icon}
-                          <span className="">{item.name}</span>
-                        </span>
-                      </Link>
-                    ))}
-                  </div>
-                                  
-                                  
-                                  }
-
-
-
+                   {isOpen &&   <div  onClick={toggleMenu} className="px-2 w-[180px] pt-2 pb-3 space-y-1 sm:px-3 absolute bg-black z-20 rounded-xl">
+                                    {menuItems.map((item) => (
+                                      <Link
+                                        key={item.name}
+                                        href={`${item.path}`}
+                                        className="block  px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 transition duration-150 ease-in-out"
+                                        aria-label={item.name}
+                                      >
+                                        <span className="flex items-center">
+                                          {item.icon}
+                                          <span className="">{item.name}</span>
+                                        </span>
+                                      </Link>
+                                    ))}
+                                  </div>}
                       
             </div>
           
 
-           
             <Link href="/">
             <div className='flex justify-center items-center md:gap-2 '>
                 <Image alt='logo' className='md:w-16 lg:w-24 w-14' src={logo}/>
@@ -123,4 +98,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default Navber;

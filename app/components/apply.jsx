@@ -1,6 +1,7 @@
 'use client'
 import axios from "axios";
 import Swal from "sweetalert2";
+import sideImg from "../asset/sideImg1.png"
 const ApplicationForm = () => {
     const handleFrom=(e)=>{
         e.preventDefault()
@@ -168,7 +169,7 @@ const ApplicationForm = () => {
 
         <form onSubmit={handleFrom} className="space-y-4 md:w-[52vw] p-2 md:p-0 mx-auto relative bg-gray-800 bg-opacity-35">
         <div className="md:border-[1px] border-[#E5E7EB] rounded-3xl  bg-gradient-to-r from-white/8 to-gray-400/8 md:p-[65px] p-1" >
-        <div className="md:min-w-3xl md:p-8 p-2   rounded-2xl shadow-lg  ">
+        <div className={`md:min-w-3xl md:p-8 p-2   rounded-2xl shadow-lg  `}>
 
         
         <div className="absolute xl:w-[90vh] md:w-[50vh] w-[50%] h-[50vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-700 to-blue-900
