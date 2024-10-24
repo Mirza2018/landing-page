@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function Features() {
   return (
-    <div id="getStarted" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white md:py-12 py-4 px-6 lg:mx-8 xl:mx-0">
+    <div id="get-started" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white md:py-12 py-4 px-6 lg:mx-8 xl:mx-0">
       <div className="justify-center mx-auto container flex flex-col md:flex-row  items-center gap-[54px]">
         {/* Left Side - Main Text */}
         <div className="flex-1">

@@ -36,8 +36,8 @@ const Navber = () => {
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "Apply Now", path: "/apply-now" },
-    { name: "Get Started", path: "/#getStart" },
-    { name: "Advanced", path: "/#advance" },
+    { name: "Get Started", path: "/#get-started" },
+    { name: "Advanced", path: "/#advanced" },
   ];
 
   // Motion variants for staggered animations

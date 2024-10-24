@@ -36,8 +36,8 @@ const Footer = () => {
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "Apply Now", path: "/apply-now" },
-    { name: "Get Started", path: "/#getStart" },
-    { name: "Advanced", path: "/#advance" },
+    { name: "Get Started", path: "/#get-started" },
+    { name: "Advanced", path: "/#advanced" },
   ];
 
   // Motion variants for staggered animations
@@ -59,7 +59,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="flex justify-around bg-black md:p-6 items-center containerbg">
+    <div className="flex justify-around bg-[#161622]  items-center ">
       <div className="relative">
         <div
           onClick={toggleMenu}
