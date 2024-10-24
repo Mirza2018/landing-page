@@ -4,6 +4,7 @@ import Image from "next/image";
 import Swal from "sweetalert2";
 import sideImg from "../asset/sideImg1.png"
 
+
 const ApplicationForm = () => {
     const handleFrom=(e)=>{
         e.preventDefault()

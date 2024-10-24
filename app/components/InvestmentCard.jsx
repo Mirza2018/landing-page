@@ -5,7 +5,7 @@ import Image from 'next/image';
 import sideImg from "../asset/sideImg1.png"
 
 const InvestmentSection = () => (
-  <div  id='advance' className=" md:pb-10 lg:pb-[70px]
+  <div  id='advanced' className=" md:pb-10 lg:pb-[70px]
    text-white min-h-screen flex flex-col items-center justify-center 
    pt-10  relative bg-[#040411] md:mb-[56px] mb-[40px] ">
 

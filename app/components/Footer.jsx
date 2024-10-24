@@ -5,6 +5,8 @@ import logo from '../asset/logo.png'
 import Link from "next/link";
 import { HiBars3BottomLeft } from "react-icons/hi2";
 import { motion } from "framer-motion";
+import { ImCross } from 'react-icons/im';
+import { HiMenuAlt2 } from 'react-icons/hi';
 
 
 const Footer = () => {
@@ -35,8 +37,8 @@ const Footer = () => {
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'Apply Now', path: '/apply-now' },
-    { name: 'Get Started', path: '/#getStart' },
-    { name: 'Advanced', path: '/#advance' },
+    { name: 'Get Started', path: '/#getStarted' },
+    { name: 'Advanced', path: '/#advanced' },
   ];
   
     return (
@@ -50,16 +52,19 @@ const Footer = () => {
                        focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out cursor-pointer"
                       aria-label="Toggle menu"
                     >
-                      <HiBars3BottomLeft className='text-3xl font-bold me-1 ' /> <span className="md:block hidden" >
-                        MENU </span>
+                      {isOpen ? (
+            <ImCross className="text-lg me-1" />
+          ) : (
+            <HiMenuAlt2 className="text-3xl font-bold me-1" />
+          )}
                  
 
                    {isOpen &&  
                     <motion.div
-                           initial={{ opacity: 0, y: -10 }}    // Starting state: hidden and slightly above
-                      animate={{ opacity: 1, y: 0 }}      // Animated state: visible and positioned
-                      exit={{ opacity: 0, y: -10 }}       // Exit state: hidden and moves back up
-                      transition={{ duration: 0.3 }}      // Smooth transition duration
+                    initial={{ opacity: 0, y: -10 }} // Starting state: hidden and slightly above
+              animate={{ opacity: 1, y: 0 }} // Animated state: visible and positioned
+              exit={{ opacity: 0, y: -10 }} // Exit state: hidden and moves back up
+              transition={{ duration: 0.6, ease: [.5, 0.7, 0.9, 1.1] }} // Smooth transition    // Smooth transition duration
                       
                       // style={{ top: "100%" }} 
                     className="px-2 bottom-10 left-1 w-[150px]  pt-2 pb-3 
