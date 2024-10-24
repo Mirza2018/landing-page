@@ -70,6 +70,7 @@ const ApplicationForm = () => {
         }
         axios.post(process.env.NEXT_PUBLIC_API_URL,data)
         .then((res)=>{
+         console.log(res);
          
           Swal.fire({
             title: "Application Done",
