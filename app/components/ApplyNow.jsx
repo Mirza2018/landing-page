@@ -68,7 +68,7 @@ const ApplicationForm = () => {
           Social:social,
           About:about
         }
-        axios.post('https://api.sheetbest.com/sheets/7fecf609-86f3-4583-a40a-53de4818217e',data)
+        axios.post(process.env.NEXT_PUBLIC_API_URL,data)
         .then((res)=>{
          
           Swal.fire({
