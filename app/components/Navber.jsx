@@ -67,31 +67,33 @@ const Navber = () => {
           className="inline-flex items-center relative justify-center p-2 rounded-md text-white hover:text-white font-bold focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out cursor-pointer"
           aria-label="Toggle menu"
         >
-          {isOpen ? (
+          {/* {isOpen ? (
             <ImCross className="text-lg me-1" />
           ) : (
             <HiMenuAlt2 className="text-3xl font-bold me-1" />
-          )}
+          )} */}
 
-
-{/* <label class="flex flex-col gap-2 w-8">
-  <input class={`${isOpen? "peer" : "hidden"}`} type="checkbox" />
-  <div
-    class="rounded-2xl h-[3px] w-full peer-checked:w-1/2 bg-white duration-500 peer-checked:rotate-[225deg] origin-right peer-checked:-translate-x-[12px] peer-checked:-translate-y-[1px]"
-  ></div>
-  <div
-    class="rounded-2xl h-[3px] w-full bg-white duration-500 peer-checked:-rotate-45"
-  ></div>
-  <div
-    class="rounded-2xl h-[3px] w-1/2 bg-white duration-500  peer-checked:place-self-end peer-checked:rotate-[225deg] origin-left peer-checked:translate-x-[12px] peer-checked:translate-y-[1px]"
-  ></div>
-</label>
-
-
-
-
- */}
-
+<label className="flex flex-col gap-2 w-8" >
+      <div
+        className={`rounded-2xl h-[3px]  bg-white duration-500 ${
+          isOpen
+            ? " w-1/2 rotate-[225deg] origin-right -translate-x-[12px] -translate-y-[1px]"
+            : "w-full"
+        }`}
+      ></div>
+      <div
+        className={`rounded-2xl h-[3px] w-full bg-white duration-500 ${
+          isOpen ? "-rotate-45" : ""
+        }`}
+      ></div>
+      <div
+        className={`rounded-2xl h-[3px] origin-left w-1/2 bg-white duration-500 ${
+          isOpen
+            ? "place-self-end rotate-[225deg]  translate-x-[12px] translate-y-[1px]"
+            : ""
+        }`}
+      ></div>
+    </label>
 
 
 
