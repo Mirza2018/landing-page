@@ -68,7 +68,7 @@ const ApplicationForm = () => {
           Social:social,
           About:about
         }
-        console.log("API URL:", process.env.NEXT_PUBLIC_API_URL);
+        
         axios.post(process.env.NEXT_PUBLIC_API_URL,data)
         .then((res)=>{
          console.log(res);
