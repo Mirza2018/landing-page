@@ -84,7 +84,7 @@ const ApplicationForm = () => {
 
     return (
 
-      <div className="pt-[85px] containerbg  md:mb-[106px] mb-8 bg-[#040411]">
+      <div className="pt-[85px] containerbg  md:mb-[106px] mb-8 bg-[#040411] md:min-h-[90vh] lg:h-full">
               <h1 className="text-center  2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[24px] text-white font-semibold mb-[50px] z-20">Begin Application Now</h1>
 
 

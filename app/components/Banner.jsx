@@ -49,8 +49,8 @@ const Banner = () => {
 
             </div>
             <Link href={"/apply-now"}>
-            <button className='bg-blue-500 flex-shrink-0 md:mt-16 mt-4 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]
-             hover:text-blue-500 duration-500  hover:bg-white font-semibold md:py-[17px]  lg:py-[23px] lg:px-[17px] md:px-[12px] px-[10px] py-[14px] rounded-full flex mx-auto gap-2 items-center '>
+            <button className='bg-[#237bff] text-white rounded-full hover:text-blue-500 duration-500 hover:bg-white transition-colors flex flex-shrink-0 shadow-[0_4px_70px_0_rgba(35,123,255,0.5)]md:mt-16 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]
+              font-semibold md:py-[17px]  lg:py-[23px] lg:px-[17px] md:px-[12px] px-[10px] py-[14px] mt-[57px] mx-auto gap-2 items-center '>
             Generate Yours Now
                 <FaArrowRight />
                 </button>

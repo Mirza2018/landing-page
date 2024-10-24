@@ -5,9 +5,12 @@ import Image from 'next/image';
 import sideImg from "../asset/sideImg1.png"
 
 const InvestmentSection = () => (
-  <div  id='advance' className=" md:pb-10 lg:pb-[70px] text-white min-h-screen flex flex-col items-center justify-center pt-10  relative bg-[#040411] md:mb-[230px] mb-[40px]">
+  <div  id='advance' className=" md:pb-10 lg:pb-[70px]
+   text-white min-h-screen flex flex-col items-center justify-center 
+   pt-10  relative bg-[#040411] md:mb-[56px] mb-[40px] ">
 
-    <h2  className='2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[22px] text-blue-600  pb-4 mx-2 text-center font-medium'>Unlock Your Digital Identity</h2>
+    <h2  className='2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[22px]
+     text-blue-600  pb-4 mx-2 text-center font-medium'>Unlock Your Digital Identity</h2>
     <h1 className="md:hidden 2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[26px] text-slate-300 font-semibold mb-8 text-center mx-1">
     Create, Customize, and Own Your Unique AI  Avatar with Advanced Technology
     </h1>
@@ -86,7 +89,7 @@ const cards=[
     title:"A Dedicated Team of Editors & Scripters",
     points:["Get access to a highly skilled team of writers, designers, and developers ready to help you craft the perfect AI avatar. From scripting personalities to fine-tuning visuals, we’ve got you covered."],
     logo:<FaMoneyBillWave/>,
-    bg:"bg-[url('/card1.png')] xl:ms-0 lg:ms-28 md:ms-44",
+    bg:"bg-[url('/card1.png')] xl:ms-0 lg:ms-28 md:ms-32",
     direction:"",
     arrawImg:"/line_1.webp",
     arrclass:"bottom-0  xl:right-[25%] lg:right-[3%] md:right-[22%]"
@@ -95,7 +98,7 @@ const cards=[
     title:"AI-Powered Avatar Customization",
     points:["Our AI technology streamlines the entire avatar creation process, ensuring high-quality results with minimal effort. Enjoy intuitive design features that make building your digital self easier than ever."],
     logo:<FaCog/>,
-    bg:"bg-[url('/card2.png')] md:ms-80 lg:max-w-lg xl:max-w-full",
+    bg:"bg-[url('/card2.png')] lg:ms-80 md:ms-64 lg:max-w-lg xl:max-w-full",
     direction:"md:flex-row-reverse md:ps-44 ps-0 ",
     arrawImg:"/line_2.png",
     arrclass:"bottom-0 xl:right-[62%] lg:right-[50%] md:right-[38%]  "
@@ -104,7 +107,7 @@ const cards=[
     title:"Enhance Social Growth",
     points:["Leverage your AI avatar across various social platforms to boost engagement and grow your digital presence. Join a community of like-minded creators, and watch your social impact multiply."],
     logo:<FaHandshake/>,
-    bg:"bg-[url('/card3.png')]  xl:ms-0 lg:ms-28 md:ms-44",
+    bg:"bg-[url('/card3.png')]  xl:ms-0 lg:ms-28 md:ms-32",
     direction:"",
     isImg:false,
     arrclass:"bottom-0 right-0"

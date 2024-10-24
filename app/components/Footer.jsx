@@ -4,6 +4,7 @@ import React, { useEffect,useRef,useState } from 'react';
 import logo from '../asset/logo.png'
 import Link from "next/link";
 import { HiBars3BottomLeft } from "react-icons/hi2";
+import { motion } from "framer-motion";
 
 
 const Footer = () => {
@@ -31,20 +32,19 @@ const Footer = () => {
     };
   }, [isOpen]);
   
-    const menuItems = [
-      { name: 'Home',path:'/' },
-      { name: 'Apply now',path:'/apply-now'  },
-      { name: 'Get Start',path:'/#getStart' },
-      { name: 'Advance',path:'/#advance'  },
-     
-    ];
+  const menuItems = [
+    { name: 'Home', path: '/' },
+    { name: 'Apply Now', path: '/apply-now' },
+    { name: 'Get Started', path: '/#getStart' },
+    { name: 'Advanced', path: '/#advance' },
+  ];
   
     return (
-        <div className='flex justify-around items-center bg-[#161622] z-10 bg-transparent'>
+        <div className=' flex justify-around items-center bg-[#151521] z-30 bg-transparent '>
 
             <div className='relative'>
             <div
-                     onClick={toggleMenu}
+                     onClick={toggleMenu} ref={menuRef}
                       className="inline-flex  items-center relative justify-center
                        p-2 rounded-md text-white hover:text-white font-bold
                        focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out cursor-pointer"
@@ -52,12 +52,18 @@ const Footer = () => {
                     >
                       <HiBars3BottomLeft className='text-3xl font-bold me-1 ' /> <span className="md:block hidden" >
                         MENU </span>
-                    </div>
+                 
 
                    {isOpen &&  
-                    <div  
-                    ref={menuRef} // Attach the ref to the menu container
-                    onClick={toggleMenu} className="px-2 bottom-10 w-[150px]  pt-2 pb-3 space-y-1 sm:px-3 absolute  bg-black z-10 rounded-xl">
+                    <motion.div
+                           initial={{ opacity: 0, y: -10 }}    // Starting state: hidden and slightly above
+                      animate={{ opacity: 1, y: 0 }}      // Animated state: visible and positioned
+                      exit={{ opacity: 0, y: -10 }}       // Exit state: hidden and moves back up
+                      transition={{ duration: 0.3 }}      // Smooth transition duration
+                      
+                      // style={{ top: "100%" }} 
+                    className="px-2 bottom-10 left-1 w-[150px]  pt-2 pb-3 
+                    space-y-1 sm:px-3 absolute  bg-black z-10 rounded-xl">
                     {menuItems.map((item) => (
                       <Link
                         key={item.name}
@@ -71,11 +77,12 @@ const Footer = () => {
                         </span>
                       </Link>
                     ))}
-                  </div>
-                                  
-                                  
-                                  }
+                  </motion.div>
 
+
+             
+                                  }
+                  </div>
 
 
                       
@@ -109,11 +116,11 @@ const Footer = () => {
               </div> */}
               <div className='md:block hidden'>
               <Link href={"/apply-now"}>
-            <div >
+            <div className=''>
                 <button className='text-gray-400 md:text-xl
                  font-semibold border  rounded-full md:p-3 
                  p-2 md:px-6 hover:text-white
-                  hover:border-white'>Get in Contact</button>
+                  hover:border-white z-30'>Get in Contact</button>
             </div>
             </Link>
               </div>
