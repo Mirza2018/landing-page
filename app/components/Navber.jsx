@@ -4,13 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import logo from "../asset/logo.png";
 import Link from "next/link";
 import { HiMenuAlt2 } from "react-icons/hi";
-import { motion, useAnimate, stagger } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { ImCross } from "react-icons/im";
 
-const Footer = () => {
+const Navber = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null); // Create a ref to track the menu
-  const [scope, animate] = useAnimate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -37,9 +36,27 @@ const Footer = () => {
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "Apply Now", path: "/apply-now" },
-    { name: "Get Started", path: "/#getStarted" },
-    { name: "Advanced", path: "/#advanced" },
+    { name: "Get Started", path: "/#getStart" },
+    { name: "Advanced", path: "/#advance" },
   ];
+
+  // Motion variants for staggered animations
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Staggering effect
+      },
+    },
+    exit: { opacity: 0 },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: -10 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+    exit: { opacity: 0, y: -10, transition: { duration: 0.2 } },
+  };
 
   return (
     <div className="flex justify-around bg-black md:p-6 items-center containerbg">
@@ -56,28 +73,53 @@ const Footer = () => {
             <HiMenuAlt2 className="text-3xl font-bold me-1" />
           )}
 
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -10 }} // Starting state: hidden and slightly above
-              animate={{ opacity: 1, y: 0 }} // Animated state: visible and positioned
-              exit={{ opacity: 0, y: -10 }} // Exit state: hidden and moves back up
-              transition={{ duration: 0.6, ease: [.5, 0.7, 0.9, 1.1] }} // Smooth transition duration with eased timing
-              className="px-2 top-10 md:left-0 left-6 w-[150px] pt-2 pb-3 space-y-1 sm:px-3 absolute bg-black z-50 rounded-xl shadow-lg"
-            >
-              {menuItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={`${item.path}`}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 transition duration-150 ease-in-out"
-                  aria-label={item.name}
-                >
-                  <span className="flex items-center">
-                    <span className="">{item.name}</span>
-                  </span>
-                </Link>
-              ))}
-            </motion.div>
-          )}
+
+{/* <label class="flex flex-col gap-2 w-8">
+  <input class={`${isOpen? "peer" : "hidden"}`} type="checkbox" />
+  <div
+    class="rounded-2xl h-[3px] w-full peer-checked:w-1/2 bg-white duration-500 peer-checked:rotate-[225deg] origin-right peer-checked:-translate-x-[12px] peer-checked:-translate-y-[1px]"
+  ></div>
+  <div
+    class="rounded-2xl h-[3px] w-full bg-white duration-500 peer-checked:-rotate-45"
+  ></div>
+  <div
+    class="rounded-2xl h-[3px] w-1/2 bg-white duration-500  peer-checked:place-self-end peer-checked:rotate-[225deg] origin-left peer-checked:translate-x-[12px] peer-checked:translate-y-[1px]"
+  ></div>
+</label>
+
+
+
+
+ */}
+
+
+
+
+
+          {/* AnimatePresence to handle exit animations */}
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className="px-2 top-10 md:left-0 left-6 w-[150px] pt-2 pb-3 space-y-1 sm:px-3 absolute bg-black z-50 rounded-xl shadow-lg"
+              >
+                {menuItems.map((item) => (
+                  <motion.div key={item.name} variants={itemVariants}>
+                    <Link
+                      href={`${item.path}`}
+                      className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 transition duration-150 ease-in-out"
+                      aria-label={item.name}
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.div>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
 
@@ -90,12 +132,19 @@ const Footer = () => {
         </div>
       </Link>
 
+ 
+
+
+
+
+
+
+
+
       <div className="md:block hidden">
         <Link href={"/apply-now"}>
           <div>
-            <button
-              className="text-gray-400 md:text-xl font-semibold border rounded-full md:p-3 p-2 md:px-6 hover:text-white hover:border-white transition-all duration-300 ease-in-out"
-            >
+            <button className="text-gray-400 md:text-xl font-semibold border rounded-full md:p-3 p-2 md:px-6 hover:text-white hover:border-white transition-all duration-300 ease-in-out">
               Get in Contact
             </button>
           </div>
@@ -105,4 +154,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Navber;
