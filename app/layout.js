@@ -40,8 +40,8 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
-        {/* Remove or replace this if you don't have a manifest */}
-        <link rel="manifest" href="/site.webmanifest" />
+ 
+
         {/* Metadata */}
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
