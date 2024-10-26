@@ -23,7 +23,7 @@ const InvestmentSection = () => (
     <div className="absolute left-0 top-[50%] transform -translate-y-1/2    ">
                         <Image alt="side Img" src={sideImg} className="object-contain -z-10" />
                     </div>
-              <div className="absolute  right-0  top-[79%] transform -translate-y-1/2    ">
+              <div className="absolute  right-0  top-[76%] transform -translate-y-1/2    ">
                         <Image alt="side Img" src={sideImg} className="object-contain -z-10" />
                     </div>
     <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start ">

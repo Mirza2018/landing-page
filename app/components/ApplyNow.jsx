@@ -60,7 +60,6 @@ const ApplicationForm = () => {
           });
           return  
       }
-        console.log(name,email,phone,social,about);
         const data={
           Name:name,
           Email:email,

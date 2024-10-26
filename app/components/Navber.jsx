@@ -75,7 +75,7 @@ const Navber = () => {
 
 <label className="flex flex-col gap-2 w-8" >
       <div
-        className={`rounded-2xl h-[3px]  bg-white duration-500 ${
+        className={`rounded-2xl h-[3px] bg-white duration-500 ${
           isOpen
             ? " w-1/2 rotate-[225deg] origin-right -translate-x-[12px] -translate-y-[1px]"
             : "w-full"
