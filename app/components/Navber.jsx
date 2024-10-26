@@ -1,11 +1,9 @@
 "use client";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
-import logo from "../asset/logo.png";
 import Link from "next/link";
-import { HiMenuAlt2 } from "react-icons/hi";
-import { motion, AnimatePresence } from "framer-motion";
-import { ImCross } from "react-icons/im";
+import { useEffect, useRef, useState } from "react";
+import logo from "../asset/logo.png";
 
 const Navber = () => {
   const [isOpen, setIsOpen] = useState(false);

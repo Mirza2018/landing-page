@@ -1,6 +1,6 @@
 "use client"
-import React, { useState, useRef } from "react";
-import { FaPlayCircle, FaPauseCircle } from "react-icons/fa";
+import { useRef, useState } from "react";
+import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 
 const VideoComponent = () => {
   const [isPlaying, setIsPlaying] = useState(false); // Initially playing without sound

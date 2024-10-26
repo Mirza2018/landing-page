@@ -1,9 +1,7 @@
-
-
-import { FaArrowRight } from "react-icons/fa";
-import aiImg from '../asset/ai.png'
 import Image from "next/image";
 import Link from 'next/link';
+import { FaArrowRight } from "react-icons/fa";
+import aiImg from '../asset/ai.png';
 
 export default function Features() {
   return (

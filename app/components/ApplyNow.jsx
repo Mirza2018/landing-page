@@ -60,6 +60,7 @@ const ApplicationForm = () => {
           });
           return  
       }
+
         const data={
           Name:name,
           Email:email,
@@ -94,7 +95,7 @@ const ApplicationForm = () => {
               <div className="absolute  top-[65%] transform -translate-y-1/2    ">
                         <Image alt="side Img" src={sideImg} className="object-contain -z-10" />
                     </div>
-              <div className="absolute  right-2  top-[90%] transform -translate-y-1/2    ">
+              <div className="absolute  right-2  top-[83%] transform -translate-y-1/2    ">
                         <Image alt="side Img" src={sideImg} className="object-contain -z-10" />
                     </div>
 
@@ -175,7 +176,7 @@ const ApplicationForm = () => {
         <div className="flex justify-center">
         <button
   type="submit"
-  className="z-10 px-[17px] md:py-[23px] py-3 mt-[60px]
+  className="z-10 px-[17px] md:py-[23px] py-3 md:mt-[60px]
     font-semibold bg-[#237bff] text-white rounded-full hover:text-blue-500 duration-500 hover:bg-white transition-colors
     flex flex-shrink-0 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]
     shadow-[0_4px_70px_0_rgba(35,123,255,0.5)]"

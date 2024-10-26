@@ -1,8 +1,7 @@
 
-import React from 'react';
-import { FaMoneyBillWave, FaCog, FaHandshake, FaCheck } from 'react-icons/fa';
 import Image from 'next/image';
-import sideImg from "../asset/sideImg1.png"
+import { FaCog, FaHandshake, FaMoneyBillWave } from 'react-icons/fa';
+import sideImg from "../asset/sideImg1.png";
 
 const InvestmentSection = () => (
   <div  id='advanced' className=" md:pb-10 lg:pb-[70px]

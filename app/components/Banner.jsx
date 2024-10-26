@@ -1,7 +1,6 @@
-import React from 'react';
-import VideoComponent from './VideoComponent';
-import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
+import { FaArrowRight } from 'react-icons/fa';
+import VideoComponent from './VideoComponent';
 
 const Banner = () => {
     return (
