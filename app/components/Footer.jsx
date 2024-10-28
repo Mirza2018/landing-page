@@ -57,7 +57,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="flex justify-around bg-[#161622]  items-center ">
+    <div className="flex justify-around bg-[#161622]  items-center z-50">
       <div className="relative ">
         <div
           onClick={toggleMenu}
@@ -94,6 +94,25 @@ const Footer = () => {
 
 
 
+    {/* <label className="flex flex-col gap-2 w-8 relative cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+  <div
+    className={`absolute top-0 left-0 h-[3px] w-full bg-white rounded-2xl duration-500 transform ${
+      isOpen ? "rotate-45 translate-y-[10px]" : "translate-y-0"
+    }`}
+  ></div>
+  <div
+    className={`absolute top-0 left-0 h-[3px] w-full bg-white rounded-2xl duration-500 transform ${
+      isOpen ? "opacity-0" : "translate-y-[10px]"
+    }`}
+  ></div>
+  <div
+    className={`absolute top-0 left-0 h-[3px] w-full bg-white rounded-2xl duration-500 transform ${
+      isOpen ? "-rotate-45 translate-y-[10px]" : "translate-y-[20px]"
+    }`}
+  ></div>
+</label> */}
+
+
           {/* AnimatePresence to handle exit animations */}
           <AnimatePresence>
             {isOpen && (
@@ -103,7 +122,7 @@ const Footer = () => {
                 animate="visible"
                 exit="exit"
                 className="px-2 bottom-10 left-1 w-[150px]  pt-2 pb-3 
-                space-y-1 sm:px-3 absolute  bg-black z-10 rounded-xl">
+                space-y-1 sm:px-3 absolute  bg-black z-30 rounded-xl">
                 {menuItems.map((item) => (
                   <motion.div key={item.name} variants={itemVariants}>
                     <Link
@@ -135,7 +154,7 @@ const Footer = () => {
       <div className="md:block hidden">
         <Link href={"/apply-now"}>
           <div>
-            <button className="text-gray-400 md:text-xl font-semibold border rounded-full md:p-3 p-2 md:px-6 hover:text-white hover:border-white transition-all duration-300 ease-in-out">
+            <button className="text-gray-400 md:text-xl  font-semibold border rounded-full md:p-3 p-2 md:px-6 hover:text-white hover:border-white transition-all duration-300 ease-in-out z-30 relative">
               Get in Contact
             </button>
           </div>
