@@ -92,10 +92,10 @@ const ApplicationForm = () => {
 
 
                {/* Image Positioned with CSS */}
-              <div className="absolute  top-[65%] transform -translate-y-1/2    ">
+              <div className="absolute left-2  top-[63.3%] transform -translate-y-1/2    ">
                         <Image alt="side Img" src={sideImg} className="object-contain -z-10" />
                     </div>
-              <div className="absolute  right-2  top-[83%] transform -translate-y-1/2    ">
+              <div className="absolute  right-2  top-[81%] transform -translate-y-1/2    ">
                         <Image alt="side Img" src={sideImg} className="object-contain -z-10" />
                     </div>
 
@@ -104,7 +104,7 @@ const ApplicationForm = () => {
                     </div> */}
 
               <div className=" flex items-center justify-center bg-transparent opacity-90 ">
-              <div className="absolute xl:w-[60%] md:w-[50vh] w-[50%] h-[50vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-700 opacity-70 blur-[200px] top-[30%] -z-20"></div>
+              {/* <div className="absolute xl:w-[60%] md:w-[50vh] w-[50%] h-[50vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-700 opacity-70 blur-[200px] top-[30%] -z-20"></div> */}
               {/* <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-800"> */}
           <form onSubmit={handleFrom} className="space-y-4 lg:w-[50vw] w-[90vw] relative">
         <div className="md:border-[1px] border-[#E5E7EB] rounded-3xl   lg:p-[65px] md:p-10  p-1">
