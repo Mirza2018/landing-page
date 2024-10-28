@@ -5,7 +5,7 @@ import aiImg from '../asset/ai.png';
 
 export default function Features() {
   return (
-    <div id="get-started" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white md:py-12 py-4 px-6 lg:mx-8 xl:mx-0">
+    <div id="get-started" className="relative bg-[#040411] text-white md:pb-[100px] pb-4 px-6 lg:mx-8 xl:mx-0">
       <div className="justify-center mx-auto container flex flex-col md:flex-row  items-center gap-[54px]">
         {/* Left Side - Main Text */}
         <div className="flex-1">
@@ -16,10 +16,11 @@ export default function Features() {
             We help businesses create professional content using custom-made avatars, eliminating the need for being on camera.
           </p>
           <Link href={"/apply-now"}>
-          <button className="lg:mt-20 md:mt-5   bg-[#237bff]  rounded-full hover:text-blue-500 duration-500 hover:bg-white transition-colors flex flex-shrink-0 shadow-[0_4px_70px_0_rgba(35,123,255,0.5)]
-           text-white font-semibold md:py-5 py-4 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]   items-center
-            px-4  gap-2 ">
-            <span>Get Started Today</span>
+          <button className="lg:mt-20 md:mt-5   bg-[#237bff]  rounded-full hover:text-blue-500 duration-500 hover:bg-white transition-colors 
+          flex flex-shrink-0 shadow-[0_4px_70px_0_rgba(35,123,255,0.5)]
+           text-white font-semibold md:py-[23px] py-4 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]   items-center
+            px-[17px]  gap-2 ">
+            <span>Apply Now</span>
             <FaArrowRight />
           </button>
           </Link>

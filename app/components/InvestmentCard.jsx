@@ -1,20 +1,22 @@
-
 import Image from 'next/image';
 import { FaCog, FaHandshake, FaMoneyBillWave } from 'react-icons/fa';
 import sideImg from "../asset/sideImg1.png";
 
 const InvestmentSection = () => (
-  <div  id='advanced' className=" md:pb-10 lg:pb-[70px]
+  <div  id='advanced' className=" 
    text-white min-h-screen flex flex-col items-center justify-center 
-   pt-10  relative bg-[#040411] md:mb-[56px] mb-[40px] ">
+   relative bg-[#040411]  ">
+ {/* md:mb-[56px] mb-[40px] */}
+ {/* md:pb-[100px] lg:pb-[70px] */}
+
 
     <h2  className='2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[22px]
-     text-blue-600  pb-4 mx-2 text-center font-medium'>Unlock Your Digital Identity</h2>
-    <h1 className="md:hidden 2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[26px] text-slate-300 font-semibold mb-8 text-center mx-1">
+     text-blue-600  md:pb-[32px] pb-4 mx-2 text-center font-medium'>Unlock Your Digital Identity</h2>
+    <h1 className="md:hidden 2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[26px] text-slate-300 font-semibold mb-[42px] text-center mx-1">
     Create, Customize, and Own Your Unique AI  Avatar with Advanced Technology
     </h1>
     <h1 className="md:block hidden 2xl:text-[62px]  xl:text-[56px] lg:text-[46px] 
-    md:text-[40px] text-[32px] text-slate-300 font-semibold mb-8 text-center ">
+    md:text-[40px] text-[32px] text-slate-300 font-semibold mb-[42px] text-center ">
     Create, Customize, and Own Your Unique AI <br />Avatar with Advanced Technology
     </h1>
 
@@ -22,7 +24,7 @@ const InvestmentSection = () => (
     <div className="absolute left-0 top-[50%] transform -translate-y-1/2    ">
                         <Image alt="side Img" src={sideImg} className="object-contain -z-10" />
                     </div>
-              <div className="absolute  right-0  top-[76%] transform -translate-y-1/2    ">
+              <div className="absolute  right-0  top-[96%] transform -translate-y-1/2    ">
                         <Image alt="side Img" src={sideImg} className="object-contain -z-10" />
                     </div>
     <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start ">
@@ -31,25 +33,25 @@ const InvestmentSection = () => (
 <div className='grid gap-[75.5px]'>
   {
     cards.map(card=>(
-      <div key={card.title} className={`flex  md:mx-0 mx-2  ${card.direction} relative`}>
+      <div key={card.title} className={`flex  md:mx-0 mx-2  ${card.direction} relative  `}>
 
 <div className={`${card.bg} 
 xl:w-[814px]
   lg:w-[700px] 
    md:w-[300px]
-   flex gap-6 px-[20px] py-[35px]  rounded-xl w-full  relative bg-center bg-cover`}>
+   flex gap-6 px-[20px] py-[35px]  rounded-xl w-full  relative bg-center bg-cover border-2 border-[#C0C0C0] `}>
   
   {/* Semi-transparent overlay */}
-  <div className="absolute inset-0 bg-black opacity-[0.49] rounded"></div>
+  <div className="absolute inset-0 bg-black opacity-[0.49] rounded-xl"></div>
 
   <div className='flex-1 relative z-10'>
     {/* Add a text shadow for better readability */}
-    <h1 className='2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[24px] leading-tight font-semibold text-white shadow-lg text-center '>
+    <h1 className='2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[24px] tracking-tight font-semibold text-white shadow-lg text-center '>
       {card.title}
     </h1>
     {
       card.points.map(point => 
-        <p key={point} className=' mt-[21px] flex  font-medium  2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px] text-white pt-1 shadow-lg text-justify leading-tight'>
+        <p key={point} className=' mt-[21px] flex  font-medium  2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px] text-white  shadow-lg text-justify leading-tight'>
           {point}
         </p>
       )

@@ -1,6 +1,7 @@
 import Banner from "./components/Banner";
 import Features from "./components/Features";
 import InvestmentCard from "./components/InvestmentCard";
+import LastBanner from "./components/LastBanner";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
   <Features/>
   {/* <Companies/> */}
   <InvestmentCard/>
-  {/* <LastBanner/> */}
+  <LastBanner/>
 
  </div>
   );

@@ -4,11 +4,11 @@ import VideoComponent from './VideoComponent';
 
 const Banner = () => {
     return (
-        <div className=' md:pt-[120px] pt-2 md:pb-[50px] pb-2 text-center text-white '>
+        <div className=' md:py-[100px] py-[40px]  text-center text-white '>
             <div className='relative'>
 
          
-            {/* <h2  className='md:text-xl tracking-widest text-blue-600 font-semibold'>REVOLUTIONIZED FUNDING ACCESS </h2> */}
+            <h2  className='md:text-[24px] text-[16px]  z-10  font-bold relative'>Innovative Content Solutions</h2>
 
 
             <h1 className='md:hidden z-10 2xl:text-[86px] xl:text-[72px] lg:text-[62px] md:text-[48px] text-[32px] relative 
@@ -26,11 +26,11 @@ const Banner = () => {
              
 
                <p className='md:hidden 2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[20px] 
-               pt-5 text-white bg-clip-text  text-wrap w-auto mx-4 mt-[24px] font-semibold' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras 
+                text-white bg-clip-text  text-wrap w-auto mx-4 mt-[24px] font-semibold relative' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras 
                 needed.&#34;</p>
 
                <p className='md:block hidden 2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[20px] 
-               pt-5 text-white bg-clip-text  text-wrap w-auto mx-4 mt-[24px] font-semibold' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras <br />
+                text-white bg-clip-text  text-wrap w-auto mx-4 mt-[24px] font-semibold relative' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras <br />
                 needed.&#34;</p>
 
 
@@ -42,14 +42,15 @@ const Banner = () => {
                {/* <p  className='text-3xl bg-gradient-to-r from-white via-white   to-black bg-clip-text text-transparent mb-6 '>extensive legality, paperwork and banking.</p> */}
                </div>
                
-            <div className='md:mt-12 mt-4'>
+            <div className='md:mt-[50px] mt-4'>
                 
             <VideoComponent  />
 
             </div>
             <Link href={"/apply-now"}>
-            <button className='bg-[#237bff] text-white rounded-full hover:text-blue-500 duration-500 hover:bg-white transition-colors flex flex-shrink-0 shadow-[0_4px_70px_0_rgba(35,123,255,0.5)]md:mt-16 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]
-              font-semibold md:py-[17px]  lg:py-[23px] lg:px-[17px] md:px-[12px] px-[10px] py-[14px] mt-[57px] mx-auto gap-2 items-center '>
+            <button className='bg-[#237bff] text-white rounded-full hover:text-blue-500 duration-500 hover:bg-white transition-colors flex flex-shrink-0 
+            shadow-[0_4px_70px_0_rgba(35,123,255,0.5)]md:mt-16 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]
+              font-semibold md:py-[17px]  lg:py-[23px] lg:px-[17px] md:px-[12px] px-[10px] py-[14px] mt-[50px] mx-auto gap-2 items-center '>
             Generate Yours Now
                 <FaArrowRight />
                 </button>
