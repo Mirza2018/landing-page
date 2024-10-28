@@ -4,10 +4,16 @@ import { FaArrowRight } from "react-icons/fa";
 export default function LastBanner() {
     return (
       <div
-        className="flex justify-center items-center md:my-[100px] my-4 mx-2 md:px-[128px] px-4 py-4 md:py-[64px] md:mx-auto container bg-no-repeat rounded-xl bg-cover md:gap-[24px] z-20 relative"
+        className="flex justify-center items-center 
+        xl:my-[100px] md:my-[60px] my-10 
+        md:px-[128px] px-4 
+        xl:py-[64px] py-4 
+        md:mx-auto mx-2 
+        xl:gap-[24px] lg:gap-[18px] md:gap-[14px]
+        container bg-no-repeat rounded-xl bg-cover  z-20 relative"
         style={{ backgroundImage: "url('/lastBanner.png')" }}
       >
-        <h1 className="text-white md:text-[50px]  font-semibold">
+        <h1 className="text-white xl:text-[50px] lg:text-[40px] md:text-[32px] text-[22px] font-semibold">
           Craft Your Unique Digital Persona
         </h1>
         <Link href={"/apply-now"}>
