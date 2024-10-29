@@ -88,7 +88,8 @@ const ApplicationForm = () => {
     return (
 
       <div className="pt-[85px] containerbg  md:mb-[106px] mb-8 bg-[#040411] md:min-h-[90vh] lg:h-full">
-              <h1 className="text-center  2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] text-[24px] text-white font-semibold mb-[50px] z-20">Begin Application Now</h1>
+              <h1 className="text-center  2xl:text-[40px] xl:text-[36px] lg:text-[32px] md:text-[28px] 
+              text-[24px] text-white font-semibold mb-[50px] z-20">Begin Application Now</h1>
 
 
                {/* Image Positioned with CSS */}
@@ -107,7 +108,7 @@ const ApplicationForm = () => {
               {/* <div className="absolute xl:w-[60%] md:w-[50vh] w-[50%] h-[50vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-700 opacity-70 blur-[200px] top-[30%] -z-20"></div> */}
               {/* <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-800"> */}
           <form onSubmit={handleFrom} className="space-y-4 lg:w-[50vw] w-[90vw] relative">
-        <div className="md:border-[1px] border-[#E5E7EB] rounded-3xl   lg:p-[65px] md:p-10  p-1">
+        <div className="md:border-[1px] border-[#E5E7EB] bg-[#171723] bg-opacity-60 rounded-3xl   lg:p-[65px] md:p-10  p-2">
       
        
 

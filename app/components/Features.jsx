@@ -12,7 +12,8 @@ export default function Features() {
           <h1 className="2xl:text-[62px] xl:text-[56px] lg:text-[48px] md:text-[40px] text-[32px] font-semibold leading-tight mb-6  ">
             Revolutionize Your Content Creation with AI Avatars
           </h1>
-          <p className="2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[18px] md:leading-9 mb-8 font-semibold w-[70%]  leading-normal   ">
+          <p className="2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] 
+          text-[18px] md:leading-9 mb-8 font-semibold w-[70%]  leading-normal  bg-gradient-to-r from-[#FFFFFF] to-[#474747] bg-clip-text text-transparent ">
             We help businesses create professional content using custom-made avatars, eliminating the need for being on camera.
           </p>
           <Link href={"/apply-now"}>
@@ -37,9 +38,9 @@ export default function Features() {
       alt="AI Avatar"
       className="rounded-lg w-fit h-full aspect-square "
     />
-    <div className="p-2 bg-gray-800 rounded-lg flex flex-col justify-around lg:px-4 xl:px-6 md:px-2">
-      <h3 className="leading-7  2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[22px] font-semibold">1M+ <br /> Content Created</h3>
-      <p className=" text-[#aeaeae] leading-tight  2xl:text-[18px] xl:text-[16px] lg:text-[15px] md:text-[14px] text-[12px] text-center font-semibold">
+    <div className="p-2 bg-[#11111D] rounded-lg flex flex-col justify-around lg:px-4 xl:px-0 md:px-2">
+      <h3 className="leading-7  2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[22px] font-semibold">1M+ <br /> <span className="whitespace-nowrap"> Content Created</span></h3>
+      <p className=" text-[#aeaeae] xl:px-[27px] leading-tight  2xl:text-[18px] xl:text-[16px] lg:text-[15px] md:text-[14px] text-[12px] text-center font-semibold">
         Providing businesses with professional, face-free content creation solutions.
       </p>
       <div className="bg-gray-700 mt-4 rounded-full h-2 w-full  ">

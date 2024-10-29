@@ -8,11 +8,12 @@ const Banner = () => {
             <div className='relative'>
 
          
-            <h2  className='md:text-[24px] text-[16px]  z-10  font-bold relative'>Innovative Content Solutions</h2>
+            <h2  className='md:text-[24px] text-[16px]  z-10  font-bold relative text-[#237BFF]'>Innovative Content Solutions</h2>
 
 
             <h1 className='md:hidden z-10 2xl:text-[86px] xl:text-[72px] lg:text-[62px] md:text-[48px] text-[32px] relative 
-            leading-tight font-bold text-wrap text-center md:mx-5 md:mt-0 mt-[24px]  mx-2 '>Elevate Your Business with<span className='md:block hidden'><br /> </span> Avatar-Powered Content Creation</h1>
+            leading-tight font-bold text-wrap text-center md:mx-5 md:mt-0 mt-[24px]  mx-2 '>Elevate Your Business with
+            <span className='md:block hidden'><br /> </span> Avatar-Powered Content Creation</h1>
 
             <h1 className='md:block hidden z-10 2xl:text-[86px] xl:text-[72px] lg:text-[62px] md:text-[48px] text-[32px] relative 
             leading-tight font-bold text-wrap text-center md:mx-5 md:mt-0 mt-[24px]  mx-2 '>Elevate Your Business with <br /> Avatar-Powered Content Creation</h1>
@@ -25,18 +26,22 @@ const Banner = () => {
                {/* <h1  className='text-8xl font-semibold'>  Venture Capital Funding</h1> */}
              
 
-               <p className='md:hidden 2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[20px] 
-                text-white bg-clip-text  text-wrap w-auto mx-4 mt-[24px] font-semibold relative' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras 
+               <p className='md:hidden z-10  2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[20px] 
+                 text-wrap w-auto mx-4 mt-[24px] font-semibold relative 
+                bg-gradient-to-r from-[#FFFFFF] to-[#474747] bg-clip-text text-transparent' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras 
                 needed.&#34;</p>
 
-               <p className='md:block hidden 2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[20px] 
-                text-white bg-clip-text  text-wrap w-auto mx-4 mt-[24px] font-semibold relative' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras <br />
+               <p className='md:block z-10 hidden 2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] text-[20px] 
+                text-wrap w-auto mx-4 mt-[24px] font-semibold relative
+                 bg-gradient-to-r from-[#FFFFFF] to-[#474747] bg-clip-text text-transparent' >&#34;Effortlessly create engaging content with custom avatars tailored to your brand, no cameras <br />
                 needed.&#34;</p>
 
+   {/* <p  className='text-3xl bg-gradient-to-r from-white via-white   
+   to-black bg-clip-text text-transparent mb-6 '>extensive legality, paperwork and banking.</p> */}
 
 
-                <div className="absolute inset-0 bg-black opacity-50 rounded-3xl">
-               <div className="absolute xl:w-[110vh] md:w-[50vh] w-[50%] h-[60vh] rounded-full bg-gradient-to-r from-blue-800 via-blue-700 to-blue-900
+                <div className="absolute inset-0 bg-black opacity-[42%] rounded-3xl">
+               <div className="absolute xl:w-[110vh] md:w-[50vh] w-[50%] h-[60vh] rounded-full bg-gradient-to-r from-blue-700  to-blue-800
                 opacity-90 blur-3xl 2xl:left-1/4 xl:left-[28%]  lg:left-[30%] md:left-[20%] left-[20%] "></div>
                 </div>
                {/* <p  className='text-3xl bg-gradient-to-r from-white via-white   to-black bg-clip-text text-transparent mb-6 '>extensive legality, paperwork and banking.</p> */}

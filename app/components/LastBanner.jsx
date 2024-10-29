@@ -6,8 +6,8 @@ export default function LastBanner() {
     <div
       className="flex justify-center items-center 
       2xl:my-[100px] xl:my-[80px] lg:my-[70px] md:my-[60px] my-10 
-      2xl:px-[128px] xl:px-[60px] lg:px-[40px] md:px-[30px] px-4 
-      2xl:py-[64px] xl:py-[40px] lg:py-[30px] md:py-[20px] py-4 
+      2xl:px-[128px] xl:px-[60px] lg:px-[40px] md:px-[38px] px-3 
+      2xl:py-[64px] xl:py-[40px] lg:py-[30px] md:py-[18px] py-3 
       md:mx-auto mx-2 
       2xl:gap-[24px] xl:gap-[16px] lg:gap-[12px] md:gap-[10px] 
       container bg-no-repeat rounded-xl bg-cover z-20 relative w-full lg:w-10/12 md:w-11/12"
