@@ -132,14 +132,6 @@ const Navber = () => {
         </div>
       </Link>
 
- 
-
-
-
-
-
-
-
 
       <div className="md:block hidden">
         <Link href={"/apply-now"}>

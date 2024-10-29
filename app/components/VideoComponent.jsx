@@ -68,12 +68,12 @@ const VideoComponent = () => {
   return (
     <div className="flex items-center justify-center relative" onClick={handleIframeClick}>
       <iframe
-        src="https://drive.google.com/file/d/16m66kjV0Gmh8-F9b_cAD9iUK0nmNrqeq/preview"
+        src="https://www.youtube.com/embed/_-DRK6RAoMU"
         allow="autoplay"
         className="w-[74vw] h-[41.625vw] rounded-lg shadow-lg" // Aspect ratio maintained at 4:3 for the video
         style={{ maxWidth: '100%' }}
-        frameborder="0"
-        allowfullscreen
+        frameBorder="0"
+        allowFullScreen
       ></iframe>
 
       {/* Decorative Play/Pause Button */}
@@ -81,9 +81,9 @@ const VideoComponent = () => {
         className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer"
       >
         {/* {isPlaying ? (
-          <FaPauseCircle className="text-6xl text-transparent" />
+          <FaPauseCircle size={50} />
         ) : (
-          <FaPlayCircle className="text-6xl" />
+          <FaPlayCircle size={50} />
         )} */}
       </div>
     </div>

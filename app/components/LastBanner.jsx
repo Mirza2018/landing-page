@@ -3,16 +3,20 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function LastBanner() {
   return (
-    <div
+ <div className="2xl:py-[100px] xl:py-[80px] lg:py-[70px] 
+ md:py-[60px] py-10 bg-[#10155527]">
+    {/* style={{ background:`linear-gradient(90deg, #FFFFFF 0%, #999999 70%, #474747 100%)` }} */}
+     <div
       className="flex justify-center items-center 
-      2xl:my-[100px] xl:my-[80px] lg:my-[70px] md:my-[60px] my-10 
+      
       2xl:px-[128px] xl:px-[60px] lg:px-[40px] md:px-[38px] px-3 
       2xl:py-[64px] xl:py-[40px] lg:py-[30px] md:py-[18px] py-3 
       md:mx-auto mx-2 
       2xl:gap-[24px] xl:gap-[16px] lg:gap-[12px] md:gap-[10px] 
-      container bg-no-repeat rounded-xl bg-cover z-20 relative w-full lg:w-10/12 md:w-11/12"
+      container bg-no-repeat rounded-xl bg-cover z-20 relative w-full lg:w-10/12 md:w-11/12 "
       style={{ backgroundImage: "url('/lastBanner.png')" }}
     >
+      {/* <div className="absolute bg-[#862020] in"></div> */}
       <h1 className="text-white 
         2xl:text-[50px] xl:text-[44px] lg:text-[36px] md:text-[28px] text-[20px] 
         font-semibold text-center"
@@ -29,5 +33,6 @@ export default function LastBanner() {
         </button>
       </Link>
     </div>
+ </div>
   );
 }
